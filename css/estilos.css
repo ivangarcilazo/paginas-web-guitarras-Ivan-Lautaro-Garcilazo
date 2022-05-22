@@ -10,6 +10,7 @@
 html{
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 /*PAGINA INDEX*/
 
@@ -31,6 +32,7 @@ html{
     background-color:rgb(236, 244, 252) ;
     
     padding: 5px;
+    padding-left: 2rem;
 
     display:flex;
     align-items: center;
@@ -41,6 +43,19 @@ html{
     top:0;
     z-index: 10;
 }
+    .body__header__logo__index img{
+        background-color: #BEBEBE;
+        padding: 0.2rem;
+        border-radius: 20px;
+        transition: all 0.2s;
+    }
+    .body__header__logo__index img:hover{
+        height: 80px;
+        width: 80px;
+        background-color: #000;
+        padding: 0.2rem;
+        border-radius: 25px;
+    }
     .body__header__nav__index{
         position: relative;
         left: 6%;
@@ -58,18 +73,30 @@ html{
             font-size: 120%;
             padding: 10px 20px 10px 20px;
             text-decoration: none;
+            transition: all 0.3s;
         }
+        .body__header__nav__link__index:hover{
+            background-color: black;
+            color: #76efe8;
+            transform: scale(1.15);
+        }
+
+
+/*Comienzo del main*/
+
 
 .body__main__section__guitarra__principal__index{
     grid-area: "section1";
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+    background-color: rgb(17, 17, 17);
 }
 
     .body__main__section__guitarra__principal__contenedor__img__index{
-        width: 0rem;;
+        width: 0rem;
         height: 20rem;
+        
     }
         .body__main__section__guitarra__principal__img__index{
             height: 100%;
@@ -81,7 +108,7 @@ html{
 
     .body__main__section__guitarra__principal__contenedor__texto__index{
         background: rgb(118,239,232);
-        background: linear-gradient(270deg, rgba(118,239,232,1) 0%, rgba(118,239,232,1) 80%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(270deg, rgba(118,239,232,1) 26%, rgba(101,187,182,1) 72%, rgba(0,0,0,0) 100%);
         padding-left: 15rem;
         display: flex;
         align-items: center;
@@ -190,6 +217,7 @@ html{
         grid-template-columns: 1.5fr 2fr;
     }
         .main__section__contenedor__pedalboards__index{
+            justify-self:center ;
             background-color: #c7c7c7;
             display: flex;
             flex-direction: column;
@@ -198,7 +226,7 @@ html{
             border-radius: 15px;
             width: 26rem;
             height: 27rem;
-            margin-left: 4rem;
+            position: relative;
             margin-top: 2.7rem;
             transition: all 0.5s;
         }
@@ -368,7 +396,24 @@ html{
                     height: 75%;
                     overflow-y: scroll;
                 }
-
+    .main__section__lutheria__inicio__boton__index{
+        background-color: rgba(0, 0, 0, 0.932);
+        color: #76efe9d5;
+        font-size: 130%;
+        text-decoration: none;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        transition: all 0.2s;
+        position: relative;
+        top: 1rem;
+    }
+    .main__section__lutheria__inicio__boton__index:hover{
+        background-color:#76efe9d5;
+        color: black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 /*Footer*/
 .footer__index{
     background-color: #000000;
@@ -747,8 +792,6 @@ html{
     "seccion2 seccion2 categoria2"
     "footer footer footer";
     height: 105vh;
-
-    
 }
 
 /*Comienzo de la portada principal*/
@@ -821,6 +864,7 @@ html{
         width: 100%;
         padding:10px;
         border-radius: 10px;
+        border: 1px solid black;
     }
         #contenedor__categorias__2  h3{
             padding: 1px;
@@ -842,11 +886,20 @@ html{
                     font-size: 120%;
                 }
                 #categoria__stratocaster a{
-                    background-color: #76EFE8;
+                    text-decoration: none;
+                    margin-left: -1rem;
+                    background-color: #000;
+                    color: #76EFE8;
                     padding: 2px;
                     border-radius: 5px;
-                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
                     margin-bottom: 10px;
+                    transition: all 0.3s;
+                }
+                #categoria__stratocaster a:hover{
+                   background-color: #76EFE8;
+                   color: black;
                 }
                     #categoria__stratocaster ul li{
                         list-style:disc;
@@ -854,25 +907,42 @@ html{
                         left: 20px;
                     }
                 #categoria__telecaster a{
-                    background-color: #767DEF;
+                    text-decoration: none;
+                    margin-left: -1rem;
+                    background-color: #000;
+                    color: #767DEF;
                     padding: 2px;
                     border-radius: 5px;
-                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
                     margin-bottom: 10px;
+                    transition: all 0.3s;
+                }
+                #categoria__telecaster a:hover{
+                    background-color: #767DEF;
+                    color: black;
                 }
 
                     #categoria__telecaster ul li{
                         list-style:disc;
-                        position: relative;
                         left: 20px;
                     }
 
                 #categoria__jaguar a{
-                    background-color: #EF76BA;
+                    text-decoration: none;
+                    margin-left: -1rem;
+                    background-color: #000;
+                    color: #EF76BA;
                     padding: 2px;
-                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
                     margin-bottom: 10px;
                     border-radius: 5px;
+                    transition: all 0.3s;
+                }
+                #categoria__jaguar a:hover{
+                    background-color: #EF76BA;
+                    color: black;
                 }
                     #categoria__jaguar ul li{
                         list-style:disc;
@@ -898,14 +968,20 @@ html{
         transition: all 0.5s;
     }
     .__contenedor__guitarras__img__ancla__guitarras:hover{
-        background-color:rgba(255, 255, 255, 0.726);
-        transform: scale(1.02);
+        background-color:rgba(0, 0, 0, 0.726);
+        width: 11.5rem;
+        height: 20.5rem;
         z-index: 2;
     }
         .__contenedor__guitarras__img__ancla__guitarras a{
-            color: black;
+            display: inline-flex;
+            color: #000;
             text-decoration: none;
         }
+            .__contenedor__guitarras__img__ancla__guitarras:hover .main__section__guitarras__stratocaster__boton__guitarras{
+                position: relative;
+                top: 2rem;
+            }
 
         .__h3__guitarras{
             font-style: oblique;
@@ -1101,6 +1177,7 @@ html{
     font-size: 110%;
     margin: 50px 0px 0px 0px; ;
     padding: 5px;
+    text-decoration: none;
     transition: all 0.5s;
 }
 .main__section__guitarras__jaguar__boton__conoce__guitarras:hover{
@@ -1633,253 +1710,316 @@ html{
 }
 
 /*COMIENZO DE LA PAGINA DE ACCESORIOS*/
+
 .main__section__principal__accesorios{
     display: flex;
-    width: 115%;
+    max-width: 100%;
+    height: 15rem;
+    background-color: #000;
 }
+.main__section__principal__contenedor__img__index{
+    width: 20%;
+    height: 15rem;
+}
+    .main__section__principal__accesorios__img{
+        height: 20rem;
+        object-fit: cover;
+        position: relative;
+        bottom: 5rem;
+        z-index: 0;
+    }
 
 .main__section__principal__accesorios__texto__fondo{
-    background: #767def;
-    background: linear-gradient(180deg,#767def 0%, #767def 40%, rgba(255,255,255,0) 80%);
-    background: -webkit-linear-gradient(180deg,#767def 0%, #767def 40%, rgba(255,255,255,0) 80%);
-    background: -moz-linear-gradient(180deg,#767def 0%, #767def 40%, rgba(255,255,255,0) 80%);
-    margin-left: -1000px;
+    background: rgb(118,239,232);
+    background: linear-gradient(270deg, rgba(118,239,232,1) 26%, rgba(101,187,182,1) 72%, rgba(0,0,0,0) 100%);
     width: 100%;
-    padding: 100px;
-    padding-left: 1000px;
-    
+    height: 15rem;
+    z-index: 1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: all 0.2s;
 }
-.main__section__principal__accesorios__contenedor__texto{
-    position: relative;
-    top: 15%;
-}
-.main__section__principal_accesorios__parrafo{
-   margin-top: 20px;
-}
+    .main__section__principal__accesorios__contenedor__texto h2{
+        color: rgba(0, 0, 0, 0.836);
+        font-size: 300%;
+        font-style: italic;
+        transition: all 0.5s;
+        position: relative;
+        left: 10rem;
+    }
+    .main__section__principal__accesorios__contenedor__texto h2:hover{
+        transform: scale(1.13);
+    }
 
 /*Comienzo de la seccion categorias y accesorios*/
 
 /*Categorias*/
-.main__section__categorias__accesorios{
-    display: flex;
-    width: 100%;
-    height: 1750px;
-}
-.main__section__categorias__accesorios__categoria__accesorios{
-    width: 20%;
+
+:root{
+    --variable-color-accesorios: #70DCD6;
 }
 
-.main__section__categorias__fondo__accesorios{
-    background: #767def;
-    background: linear-gradient(90deg,#767def 0%, #767def 40%, rgba(255,255,255,0) 80%);
-    background: -webkit-linear-gradient(90deg,#767def 0%, #767def 40%, rgba(255,255,255,0) 80%);
-    background: -moz-linear-gradient(90deg,#767def 0%, #767def 40%, rgba(255,255,255,0) 80%);
-    height: 100%;
-    padding: 10px;
+.main__section__categorias__accesorios__categoria__accesorios{
+    height: 6rem;
+}
+    .main__section__categorias__fondo__accesorios{
+        background-color: #e2e2e2;
+        height: 6rem;
+        margin-left:0.5rem; margin-right: 0.5rem;
+        border-radius: 0.2rem;
+    }
+        .main__section__contenedor__categorias{
+            margin-top: 0.5rem;
+            display: grid;
+        }
+            .main__section__categorias__titulo__accesorios{
+                background-color: var(--variable-color-accesorios);
+                display: inline-flex;
+                width: 50rem;
+                border-radius: 5px;
+                margin-bottom: 0.5rem; margin-top: 0.5rem;
+                justify-content: center;
+                justify-self: center;
+            }
+            .main__section__navegacion__categorias__accesorios{
+                background-color: #00000071;
+                display: inline-flex;
+                align-items: center;
+                height: 3rem;
+                justify-content: space-evenly;
+            }
+                .main__section__navegacion__categorias__accesorios--no__punto{
+                    list-style: none;
+                }
+                    .main__section__navegacion__categorias__texto__accesorios{
+                        background-color: var(--variable-color-accesorios);
+                        display: flex;
+                        padding: 0.5rem;
+                        border-radius: 5px;
+                        color: black;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                    }
+                    .main__section__navegacion__categorias__texto__accesorios:hover{
+                        background-color: #000;
+                        color:var(--variable-color-accesorios);
+                        transform: scale(1.2);
+                    }
+/*Accesorios - ajustes generales*/  
+
+.main__section__accesorios__accesorios{
+   background-color: rgb(255, 255, 255);
 }
 
 .main__section__accesorios__img--tamaño{
     height: 200px;
     width: 200px;
 }
-.main__section__contenedor__categorias{
-    background: #a1a1a1;
-    background: linear-gradient(270deg,#a1a1a1 0%, #a1a1a1 40%, rgba(255,255,255,0) 80%);
-    background: -webkit-linear-gradient(270deg,#a1a1a1 0%, #a1a1a1 40%, rgba(255,255,255,0) 80%);
-    background: -moz-linear-gradient(270deg,#a1a1a1 0%, #a1a1a1 40%, rgba(255,255,255,0) 80%);
-    padding: 5px;
-    border-radius: 5px;
-    position: relative;
-    height: 50%;
-}
-.main__section__navegacion__categorias__accesorios--no__punto{
-    list-style:none;
-}
-.main__section__navegacion__categorias__texto__accesorios{
-    color: #000000;
-    font-size: 100%;
-    background: rgb(118,125,239);
-    background: linear-gradient(90deg, rgba(118,125,239,0) 0%, rgba(118,125,239,0.8015581232492998) 50%, rgba(118,125,239,0) 100%);
-    display: inline-flex;
-    justify-content: center;
-    padding: 2px;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-}
-.main__section__navegacion__categorias__texto__accesorios--color{
-    color: #000000;
-    font-size: 100%;
-    background: rgb(118,125,239);
-background: linear-gradient(90deg, rgba(118,125,239,0.1516981792717087) 10%, rgba(118,125,239,0.8015581232492998) 50%, rgba(118,125,239,0.14609593837535018) 90%);
-    display: inline-flex;
-    justify-content: center;
-    padding: 2px;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-}
-.main__section__categorias__titulo__accesorios{
-    background-color: #767def;
-    border-top-left-radius: 5px;
-    border-top-right-radius:5px ;
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-}
-/*Accesorios*/
 .main__section__fondo__accesorios{
     background-color: #000000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.747);
     border-radius: 5px;
     padding: 15px;
     width: 230px;
     height: 230px;
+    transition: all 0.3s;
 }
-.main__section__boton__accesorios{
-    color: black;
-    background-color: #767def;
-    padding: 5px;
-    border-radius: 5px;
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    bottom: 10%;
+.main__section__fondo__accesorios:hover{
+    background-color:var(--variable-color-accesorios);
+    height: 250px ;
 }
-.main__section__boton__accesorios__2{
-    color: black;
-    background-color: #767def;
-    padding: 5px;
-    border-radius: 5px;
-    display: inline-flex;
-    justify-content: center;
-    position: relative;
-    width: 116%;
-    right: 8%;
-}
+    .main__section__boton__accesorios{
+        color: black;
+        font-size: 100%;
+        text-decoration: none;
+        background-color:var(--variable-color-accesorios);
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        bottom: 10%;
+        transition: all 0.2s;
+    }
+    .main__section__fondo__accesorios:hover .main__section__boton__accesorios{
+        background-color: #000;
+        color: var(--variable-color-accesorios);
+        bottom: 5%;
+    }
+
+    .main__section__boton__accesorios__2{
+        color: black;
+        font-size: 100%;
+        text-decoration: none;
+        background-color: var(--variable-color-accesorios);
+        padding: 5px;
+        border-radius: 0px 0px 5px 5px;   
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        width: 116%;
+        right: 8%;
+        transition: all 0.3s;
+    }
+    .main__section__fondo__accesorios:hover .main__section__boton__accesorios__2{
+        background-color: #000;
+        color: white;
+        width: 75%;
+        border-radius: 0px 5px 5px 0px;
+    }
+
 
 
 
 /*Comienzo seccion de pedales*/
 .main__section__accesorios__accesorios{
     width: 100%;
+    
 }
-
-.main__section__pedales__contenedor__titulo__accesorios{
-    background-color: #767def;
-    margin-top: 50px;
-    margin-bottom:50px ;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 2px;
-    position:relative;
-    width: 60%;
-}
-.main__section__pedales__titulo__accesorios{
-    position: relative;
-    left: 40%   ;
-}
-.main__section__pedales__pedales__accesorios{
-    display: flex ;
-    justify-content: space-evenly;
-    margin: 50px;
-}
-.main__section__pedales__pedales__cargar__mas__accesorios{
-    background-color: #767def;
-    padding: 5px;
-    position: relative;
-    left: 73%;
-    color: #000000;
-    border-radius: 5px  ;
-}
+    .main__section__pedales__contenedor__titulo__accesorios{
+        background-color: #000000e1;
+        margin-top: 1rem;
+        margin-bottom:50px ;
+        border-radius: 10px;
+        padding: 2px;
+        position: relative;
+        left: 31%;
+        width: 30rem;
+        display:flex;
+        justify-content: center;
+        border: 1px rgb(255, 255, 255) solid;
+    }
+    .main__section__pedales__titulo__accesorios{
+        font-size: 130%;
+        color: white;
+    }
+    .main__section__pedales__pedales__accesorios{
+        display: flex ;
+        justify-content: space-evenly;
+        margin: 50px;
+    }
+    .main__section__pedales__pedales__cargar__mas__accesorios{
+        background-color: var(--variable-color-accesorios);
+        padding: 5px;
+        position: relative;
+        left: 73%;
+        color: #000000;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .main__section__pedales__pedales__cargar__mas__accesorios:hover{
+        background-color: #000;
+        color: var(--variable-color-accesorios);
+    }
 
 
 
 /*Comienzo seccion pedalboards*/
+
+
 .main__section__pedalboards__contenedor__titulo__accesorios{
-    background-color: #767def;
-    margin-top: 50px;
-    margin-bottom:50px ;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    background-color: #3e7774;
+    margin-top: 2rem;
+    margin-bottom: 2rem ;
+    border-radius: 10px;
     padding: 2px;
-    position:relative;
-    width: 60%;
-    margin-left: 40%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 31%;
+    width: 30rem;
 }
-.main__section__pedalboards__titulo__accesorios{
-    position:relative;
-    left: 40%;
-}
+
 .main__section__pedalboards__pedalboards__accesorios{
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
 }
 .main__section__pedalboards__cargar__mas__accesorios{
-    background-color: #767def;
+    background-color: var(--variable-color-accesorios);
     padding: 5px;
     position: relative;
     left: 46%;
     color: #000000;
-    border-radius: 5px  ;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
-
+.main__section__pedalboards__cargar__mas__accesorios:hover{
+    background-color: #000;
+    color: var(--variable-color-accesorios);
+}
 /*Comienzo de Electronica*/
 .main__section__electronica__contenedor__titulo__accesorios{
-    background-color: #767def;
-    margin-top: 50px;
-    margin-bottom:50px ;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background-color: #59beb9;
+    margin-top: 2rem;
+    margin-bottom:2rem ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 2px;
+    border-top: 1px solid black; border-bottom: #000 1px solid; border-right: #000 1px solid;
+    display: flex;
+    justify-content: center;
     position:relative;
-    width: 60%;
+    width: 40%;
 }
-.main__section__electronica__titulo__accesorios{
-    position:relative;
-    left: 40%;
-}
+
 .main__section__electronica__electronica__accesorios{
     display: flex;
     justify-content:space-evenly;
     margin: 50px;
 }
 .main__section__electronica__cargar__mas__accesorios{
-    background-color: #767def;
+    background-color: var(--variable-color-accesorios);
     padding: 5px;
     position: relative;
-    left: 19%;
+    left: 18%;
     color: #000000;
-    border-radius: 5px  ;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.main__section__electronica__cargar__mas__accesorios:hover{
+    background-color: #000;
+    color:var(--variable-color-accesorios);
 }
 
 /*Comienza la seccion de puas, etc*/
 .main__section__otros__contenedor__titulo__accesorios{
-    background-color: #767def;
+    background-color: #70DCD6;
+    border: #000 1px solid;
     margin-top: 50px;
     margin-bottom:50px ;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
     position:relative;
-    width: 60%;
-    margin-left: 40%;
+    width: 40%;
+    position: relative;
+    left: 60%;
 }   
-.main__section__otros__titulo__accesorios{
-    position:relative;
-    left: 40%;
-}
 .main__section__otros__otros__accesorios{
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
 }
 .main__section__otros__cargar__mas__accesorios{
-    background-color: #767def;
+    background-color: var(--variable-color-accesorios);
     padding: 5px;
     position: relative;
     left: 74%;
     color: #000000;
-    border-radius: 5px  ;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.main__section__otros__cargar__mas__accesorios:hover{
+    background-color: #000;
+    color: var(--variable-color-accesorios);
 }
