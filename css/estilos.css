@@ -1753,7 +1753,12 @@ html{
     }
 
 /*Comienzo de la seccion categorias y accesorios*/
-
+.main__section__categorias__accesorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0px;
+}
 /*Categorias*/
 
 :root{
@@ -1762,6 +1767,7 @@ html{
 
 .main__section__categorias__accesorios__categoria__accesorios{
     height: 6rem;
+    width: 100%;
 }
     .main__section__categorias__fondo__accesorios{
         background-color: #e2e2e2;
@@ -1810,6 +1816,10 @@ html{
 
 .main__section__accesorios__accesorios{
    background-color: rgb(255, 255, 255);
+   width: 75rem;
+    height: 100%;
+    box-shadow: -5px 0 15px -15px rgb(0, 0, 0), 5px 0 15px -15px rgb(0, 0, 0);
+    margin-top: 0.5rem;
 }
 
 .main__section__accesorios__img--tamaño{
@@ -1874,10 +1884,7 @@ html{
 
 
 /*Comienzo seccion de pedales*/
-.main__section__accesorios__accesorios{
-    width: 100%;
-    
-}
+
     .main__section__pedales__contenedor__titulo__accesorios{
         background-color: #000000e1;
         margin-top: 1rem;
@@ -1991,7 +1998,7 @@ html{
 /*Comienza la seccion de puas, etc*/
 .main__section__otros__contenedor__titulo__accesorios{
     background-color: #70DCD6;
-    border: #000 1px solid;
+    border-top: #000 1px solid; border-bottom:#000 1px solid ; border-left: #000 1px solid;
     margin-top: 50px;
     margin-bottom:50px ;
     border-top-left-radius: 10px;
@@ -2014,6 +2021,7 @@ html{
     padding: 5px;
     position: relative;
     left: 74%;
+    bottom: 1rem;
     color: #000000;
     border-radius: 5px;
     text-decoration: none;
