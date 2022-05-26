@@ -255,7 +255,7 @@ html{
 
 .prop__body__contacto{
     height: 100vh;
-    background-image: url(/assets/pagina__contacto/img-fondo/fondo.jpg);
+    background-image: url(../assets/pagina__contacto/img-fondo/fondo.jpg);
     background-attachment:fixed;
     object-fit:contain;
 }
