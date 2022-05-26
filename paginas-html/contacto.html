@@ -7,138 +7,198 @@
             <title>Contacto</title>
         <link rel="short cut icon" href="../assets/favicon/icono.png">
         <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css__bs/bootstrap.min.css">
     </head>
-<body class="cuerpo__size">
+<body class="container-xxl p-0 prop__body__contacto">
+
         <!--Encabezado de la pagina-->
-        <header class="body__header__index">
-        
-            <div><a class="body__header__logo__index" href="../index.html"><img src="../assets/imagen-logo.png" alt="logo" width="70px" height="70px"></a></div>
-            <nav class="body__header__nav__index">
-                
-                <a class="body__header__nav__link__index" href="../index.html">Inicio</a>
-                <a class="body__header__nav__link__index" href="../paginas-html/guitarras.html">Guitarras</a> 
-                <a class="body__header__nav__link__index" href="../index.html#lutheria">Lutheria</a>
-                <a class="body__header__nav__link__index" href="../paginas-html/accesorios.html" >Accesorios</a>
-                <a class="body__header__nav__link__index" href="../paginas-html/contacto.html">Contacto</a>
-                <a class="body__header__nav__link__index" href="../paginas-html/atencion_cliente.html">Atención al cliente</a>
-                
-            </nav>
+        <header class="prop__header container-xxl position-fixed">
+
+            <nav class="navbar navbar-expand-lg navbar-light  radius__border__navbar__header prop__navbar">
+    
+                <div class="container-xxl">
+    
+                  <a class="navbar-brand" href="../index.html"><img class="border border-secondary prop__border__img__header img-fluid" src="../assets/index__img/imagen-logo.png" alt="" width=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                  <div class="collapse navbar-collapse "  id="navbarNav">
+    
+                    <ul class="navbar-nav w-100 d-flex margin__left__bar__header">
+    
+                      <li class="nav-item flex-fill">
+                        <a class="nav-link  boton__nav__header active d-flex justify-content-center rounded-start " aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item flex-fill">
+                        <a class="nav-link boton__nav__header d-flex justify-content-center " href="../index.html#lutheria">Lutheria</a>
+                      </li>
+                      <li class="nav-item flex-fill">
+                        <a class="nav-link boton__nav__header d-flex justify-content-center " href="./guitarras.html">Guitarras</a>
+                      </li>
+                      <li class="nav-item flex-fill">
+                        <a class="nav-link boton__nav__header d-flex justify-content-center " href="./accesorios.html">Accesorios</a>
+                      </li>
+                      <li class="nav-item flex-fill">
+                        <a class="nav-link boton__nav__header d-flex justify-content-center " href="./contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item flex-fill">
+                        <a class="nav-link boton__nav__header d-flex justify-content-center  rounded-end " href="./atencion_cliente.html">Atencion al cliente</a>
+                      </li>
+    
+                    </ul>
+                  </div>
+    
+                </div>
+              </nav>
         </header>
+        <!--main-->
+        <main class="container-xxl pt-xl-0 pe-0 ps-0 prop__main__contacto">
 
-    <main class="main__contacto">
-        <section class="main__section__principal__contacto">
-            <div class="main__section__principal__contacto__img">
-                <img src="../assets/pagina__contacto/img_principal.jpg" alt="">
-            </div>
-            <div class="main__section__principal__contacto__texto__contenedor">
-                <div class="main__section__principal__contacto__texto">
-                    <h2>¡Estás en las mejores manos!</h2>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem perferendis excepturi eveniet cum fugit quas ipsam quidem impedit facilis dolorem repellendus magnam, mollitia laboriosam iusto quasi. Laudantium, modi fuga.
-                    </p>
-                </div>
-            </div>
-        </section>
+            <div class="container-xxl bg__img__contacto w-100 height__conteiner__1__contacto d-flex  flex-column flex-xl-row justify-content-center align-items-center pe-0 pt-5 pt-xl-0">
 
-        <div class="main__contacto__divisor"></div>
+                <div class="container bg__form__contacto mx-auto rounded p-2 prop__form__contacto prop__contacto1__contacto">
+                    <p class="fs-2 bg-primary prop__txt__footer rounded-top fw-bold d-flex justify-content-center">Nos pondremos en contacto contigo.</p>
 
-        <section class="main__section__contacto__ubicacion__datos">
-            <section class="main__section__contacto__ubicacion">
-                <div class="main__section__contacto__ubicacion__contenedor">
-                    <h3 class="main__section__contacto__ubicacion__texto">¡Estamos en Buenos Aires!</h3>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label color__label__form__contacto">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="d-flex">
+                          <input class="form-control me-5" type="name" placeholder="Escribe tu nombre">
+                          <input class="form-control" type="tel" placeholder="Escribe tu numero de celular">
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label color__label__form__contacto mt-3">Describe tu idea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button type="reset" class="btn btn-secondary me-5">Borrar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
                 </div>
-                <div class="main__section__contacto__contenedor__ubicacion__maps">
-                    <iframe class="main__section__contacto__ubicacion__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.8977452544977!2d-58.36523518511487!3d-34.60933257419585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33528fe1d5ecd%3A0x8b5142d0fe5dd3c1!2sMarta%20Lynch%20360%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1650695145808!5m2!1ses!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-    
-                <div class="main__section__contacto__datos__contacto">
-                    <ul>
-                        <li class="main__section__datos__contacto__tel__email">Telefono: +123 456 789</li>
-                        <li class="main__section__datos__contacto__tel__email">Gmail: stratoclub@ayuda.com</li>
-                    </ul>
-                    <div class="main__section__contacto__datos__contacto__contenedor__horarios">
-                        <h4 class="main__section__contacto__datos__contacto__horarios__titulo">Horarios de atención</h4>
-                    <ul class="main__section__contacto__datos__contacto__horarios">
-                        <li>De mañana:</li>
-                        <ul class="main__section__contacto__datos__contacto__horarios--posicion">
-                            <li>8:00 AM - 1:00 PM</li> 
-                        </ul>
-                        <li>De tarde:</li>
-                        <ul class="main__section__contacto__datos__contacto__horarios--posicion">
-                            <li>5:00 PM - 12:00 AM</li>
-                        </ul>
-                    </ul>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="main__section__contacto__datos">
-                <div class="main__section__contacto__datos__contenedor">
-                    <div class="main__section__contacto__datos__contenedor__2">
-                        <div class="main__section__contacto__datos__contenedor__texto__encabezado">
-                            <h3 class="main__section__contacto__datos__texto__encabezado">Nos pondremos en contacto contigo.</h3>
+                 
+                <div class="container w-100 h-100 d-flex justify-content-xl-end justify-content-lg-center m-0 pe-0 ps-0 ps-xl-5 mt-2 mt-xl-0 mb-5 mb-xl-0">
+                    <div class="container w-100 h-100 bg__container__info__contacto m-0 shadow pt-xl-5 ms-xl-5 mb-5 mb-md-0">
+                        <div class="container mt-xl-5">
+                            <h2 class="d-flex justify-content-strat rounded-top prop__txt__footer fst-italic">Informacion de contacto</h2>
+
+                            <div class="container d-flex flex-column justify-content-evenly ">
+
+                                <div class="container d-flex justify-content-start align-items-center mt-xl-5 p-0 ">
+                                    <img class="img-fluid" src="../assets/pagina__contacto/info-contato-iconos/horarios-atencion.png" height="70px" width="70px" alt="">
+                                    <p class="fs-5 fw-bold align-self-center m-0 color__text__info__contacto">De lunes a viernes - 9:00-20:30</p>
+                                </div>
+
+                                <div class="container d-flex justify-content-start align-items-center mt-xl-5 p-0">
+                                    <img class="img-fluid" src="../assets/pagina__contacto/info-contato-iconos/ubicacion-icono.jpg" height="70px" width="70px" alt="">
+                                    <p class="fs-4 fw-bold align-self-center m-0 color__text__info__contacto">Estamos en Buenos Aires 123</p>
+                                </div>
+
+                                <div class="container  d-flex justify-content-start align-items-center mt-xl-5">
+                                    <img class="img-fluid p-1" src="../assets/pagina__contacto/info-contato-iconos/llamada-icono.png" height="50px" width="50px"  alt="">
+                                    <p class="fs-4 fw-bold align-self-center m-0 color__text__info__contacto">Llamanos al +1 234 5678</p>
+                                </div>
+                            </div>
                         </div>
-                        <form action="">
-                            <div>
-                                <input class="contacto__mail" type="email" placeholder="Ingresa tu e-mail">
-                            </div>
-                            <div>
-                                <input class="contacto__nombre__apellido" type="text" placeholder="Nombre y apellido">
-                                <input class="contacto__telefono" type="tel" placeholder="Ingresa tu número telefonico">
-                            </div>
-                            <div>
-                                <input class="contacto__idea" type="text" placeholder="Motivo de contacto/Idea">
-                            </div>
-                            <div class="contacto__novedades_contenedor">
-                                <input type="checkbox" value="Si">
-                                <h5 class="contacto__novedades__texto">Acepto recibir novedades</h5>
-                                <input class="contacto__datos__enviar" type="submit" value="Enviar">
-                            </div>
-                            <div>
-                                <input class="contacto__datos__deshacer" type="reset" value="Deshacer">
-                            </div>
-                        </form>
+                        
                     </div>
                 </div>
-            </section>
-        </section>
-        
-       
-    </main>
-    <br>
-    <hr>
+            </div>
+
+            <div class=" container-fluid height__conteiner__2__contacto pt-2 mt-5 mt-md-0">
+                <div class="container d-flex justify-content-center"><div class="div__bar__contacto rounded"></div></div>
+
+                <div class="container d-flex justify-content-center mt-4 mb-4"><h2 class="fs-1 fw-bold prop__title__contacto2">¿Por qué elegirnos?</h2></div>
+                
+
+                <div class="container bg__contenedor__razones__contacto p-2 rounded">
+
+                    <div class="card-group">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col prop__card__contacto">
+                              <div class="card h-100">
+                                <img src="../assets/pagina__contacto/contacto-2/razones-img/razon1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Razon 1</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col prop__card__contacto">
+                              <div class="card h-100">
+                                <img src="../assets/pagina__contacto/contacto-2/razones-img/razon2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Razon 2</h5>
+                                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col prop__card__contacto">
+                              <div class="card h-100">
+                                <img src="../assets/pagina__contacto/contacto-2/razones-img/razon3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Razon 3</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+               
+
+            </div>
+        </main>
     <!--Comienzo del footer-->
-    <footer class="footer__index">
-        <div>
-            <a class="footer__logo__index" href="../index.html"><img src="../assets/imagen-logo.png" alt="logo" width="75" height="75"></a>
-        </div>
-        <div class="redes__footer__index">
-            <!--Redes y ubicacion--> 
-            <div class="footer__contenedor__redes">
-                <h3 class="footer_redes">Encontranos en:</h3>
-                <a href="https://www.instagram.com" target="_blank"><img class="footer__redes__imagen__index" src="../assets/footer_img/Instagram_logo.png" alt=""></a>
-                <a href="https://www.faceboook.com" target="_blank"><img class="footer__redes__imagen__index" src="../assets/footer_img/Facebook_logo_(square).png" alt=""></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="footer__redes__imagen__index" src="../assets/footer_img/twitter.jpg" alt=""></a>
-                <div class="footer__maps__contenedor__index">
-                    <iframe class="footer_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.8977452544977!2d-58.36523518511487!3d-34.60933257419585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33528fe1d5ecd%3A0x8b5142d0fe5dd3c1!2sMarta%20Lynch%20360%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1650695145808!5m2!1ses!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>    
+    <footer class="container-fluid bg-black  ">
+        <h2 class="fs-1  prop__txt__footer mb-5">Lo mejor a tu alcance.</h2>
+    
+        <div class="container-fluis row" >
+            <div class="col-12 col-xl-4">
+                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+                
+                <div class="container mt-1">
+                    <h3 class="prop__txt__footer">Redes</h3>
+  
+                    <div class="d-flex justify-content-evenly">
+  
+                        <a href="https://www.facebook.com" target="_blank"><img src="../assets/footer_img/Facebook_logo_(square).png" class="img-fluid" width="50px" alt=""></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="../assets/footer_img/Instagram_logo.png" class="img-fluid" width="50px" alt=""></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="../assets/footer_img/twitter.jpg" class="img-fluid" width="50px" alt=""></div></a>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+  
+                <h3 class="prop__txt__footer">Sobre nosotros:</h3>
+                <div class="container">
+                    <p class="prop__txt__footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quaerat et facere, fugiat quod dignissimos amet deleniti cupiditate cum totam, illum iure. Repellat officia dignissimos consequatur delectus perferendis? Tempore, ex.</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+                <h3 class="prop__txt__footer">Encontranos</h3>
+                <div class="container mt-2 d-flex justify-content-center">
+                     <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4467612704943!2d-58.376230178812854!3d-34.567560509754735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x280de9a59d5c899a!2zMzTCsDM0JzAzLjIiUyA1OMKwMjInMTkuMiJX!5e0!3m2!1ses!2sar!4v1653523511278!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
-        <!--Atención al cliente-->
-        <div class="footer__atencion__cliente__index">
-            <a class="footer__atencion__boton__index" href="../paginas-html/atencion_cliente.html">Atencion al cliente</a>
-             <div>
-                 <ul class="footer__info__atencion__index" id="listaacf">
-                    <li>+123 456 789 </li>
-                    <li>stratoclub@ayuda.com</li>
-                 </ul>
-             </div>
-         </div>
-         <!--Información de contacto-->
-        <div class="footer__contacto__index" id="contactof">
-             <a class="footer__contacto--boton" href="../paginas-html/contacto.html">¡Contactanos!</a>
-        </div>   
-        
+        <br>
+        <br>
+        <p class="text-muted">Copyrights 2022 © -Ivan</p>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

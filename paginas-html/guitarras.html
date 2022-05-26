@@ -7,22 +7,49 @@
     <title>Guitarras</title>
     <link rel="short cut icon" href="../assets/favicon/icono.png">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css__bs/bootstrap.min.css">
 </head>
 <body class="body__guitarras">
     <!--Encabezado de la pagina-->
-    <header class="body__header__index">
-        
-        <div><a class="body__header__logo__index" href="../index.html"><img src="../assets/imagen-logo.png" alt="logo" width="70px" height="70px"></a></div>
-        <nav class="body__header__nav__index">
-            
-            <a class="body__header__nav__link__index" href="../index.html">Inicio</a>
-            <a class="body__header__nav__link__index" href="../paginas-html/guitarras.html">Guitarras</a> 
-            <a class="body__header__nav__link__index" href="../index.html#lutheria">Lutheria</a>
-            <a class="body__header__nav__link__index" href="../paginas-html/accesorios.html" >Accesorios</a>
-            <a class="body__header__nav__link__index" href="../paginas-html/contacto.html">Contacto</a>
-            <a class="body__header__nav__link__index" href="../paginas-html/atencion_cliente.html">Atención al cliente</a>
-            
-        </nav>
+    <header class="prop__header container-fluid position-fixed">
+
+        <nav class="navbar navbar-expand-lg navbar-light  radius__border__navbar__header prop__navbar">
+
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="../index.html"><img class="border border-secondary prop__border__img__header img-fluid" src="../assets/index__img/imagen-logo.png" alt="" width=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse "  id="navbarNav">
+
+                <ul class="navbar-nav w-100 d-flex margin__left__bar__header">
+
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link  boton__nav__header active d-flex justify-content-center rounded-start " aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link boton__nav__header d-flex justify-content-center " href="../index.html#lutheria">Lutheria</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link boton__nav__header d-flex justify-content-center " href="./guitarras.html">Guitarras</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link boton__nav__header d-flex justify-content-center " href="./accesorios.html">Accesorios</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link boton__nav__header d-flex justify-content-center " href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link boton__nav__header d-flex justify-content-center  rounded-end " href="./atencion_cliente.html">Atencion al cliente</a>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </nav>
     </header>
     <hr>
     <main>
@@ -275,37 +302,46 @@
     <br>
     <hr>
     <!--Comienzo del footer-->
-    <footer class="footer__index">
-        <div>
-            <a class="footer__logo__index" href="../index.html"><img src="../assets/imagen-logo.png" alt="logo" width="75" height="75"></a>
-        </div>
-        <div class="redes__footer__index">
-            <!--Redes y ubicacion--> 
-            <div class="footer__contenedor__redes">
-                <h3 class="footer_redes">Encontranos en:</h3>
-                <a href="https://www.instagram.com" target="_blank"><img class="footer__redes__imagen__index" src="../assets/footer_img/Instagram_logo.png" alt=""></a>
-                <a href="https://www.faceboook.com" target="_blank"><img class="footer__redes__imagen__index" src="../assets/footer_img/Facebook_logo_(square).png" alt=""></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="footer__redes__imagen__index" src="../assets/footer_img/twitter.jpg" alt=""></a>
-                <div class="footer__maps__contenedor__index">
-                    <iframe class="footer_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.8977452544977!2d-58.36523518511487!3d-34.60933257419585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33528fe1d5ecd%3A0x8b5142d0fe5dd3c1!2sMarta%20Lynch%20360%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1650695145808!5m2!1ses!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>    
+    <footer class="container-fluid bg-black  ">
+        <h2 class="fs-1  prop__txt__footer mb-5">Lo mejor a tu alcance.</h2>
+    
+        <div class="container-fluis row" >
+            <div class="col-12 col-xl-4">
+                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+                
+                <div class="container mt-1">
+                    <h3 class="prop__txt__footer">Redes</h3>
+  
+                    <div class="d-flex justify-content-evenly">
+  
+                        <a href="https://www.facebook.com" target="_blank"><img src="../assets/footer_img/Facebook_logo_(square).png" class="img-fluid" width="50px" alt=""></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="../assets/footer_img/Instagram_logo.png" class="img-fluid" width="50px" alt=""></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="../assets/footer_img/twitter.jpg" class="img-fluid" width="50px" alt=""></div></a>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+  
+                <h3 class="prop__txt__footer">Sobre nosotros:</h3>
+                <div class="container">
+                    <p class="prop__txt__footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quaerat et facere, fugiat quod dignissimos amet deleniti cupiditate cum totam, illum iure. Repellat officia dignissimos consequatur delectus perferendis? Tempore, ex.</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+                <h3 class="prop__txt__footer">Encontranos</h3>
+                <div class="container mt-2 d-flex justify-content-center">
+                     <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4467612704943!2d-58.376230178812854!3d-34.567560509754735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x280de9a59d5c899a!2zMzTCsDM0JzAzLjIiUyA1OMKwMjInMTkuMiJX!5e0!3m2!1ses!2sar!4v1653523511278!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
-        <!--Atención al cliente-->
-        <div class="footer__atencion__cliente__index">
-            <a class="footer__atencion__boton__index" href="../paginas-html/atencion_cliente.html">Atencion al cliente</a>
-             <div>
-                 <ul class="footer__info__atencion__index" id="listaacf">
-                    <li>+123 456 789 </li>
-                    <li>stratoclub@ayuda.com</li>
-                 </ul>
-             </div>
-         </div>
-         <!--Información de contacto-->
-        <div class="footer__contacto__index" id="contactof">
-             <a class="footer__contacto--boton" href="../paginas-html/contacto.html">¡Contactanos!</a>
-        </div>   
-        
+        <br>
+        <br>
+        <p class="text-muted">Copyrights 2022 © -Ivan</p>
     </footer>
+
+
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
