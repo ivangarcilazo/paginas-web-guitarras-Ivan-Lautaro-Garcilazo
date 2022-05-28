@@ -13,8 +13,11 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
+:root{
+    --variable-principal-color:#88EAF9;
+}
+/* mis añadidos personalizados */
+.bg-principal{background-color: var(--variable-principal-color);color: black !important;}.btn-color-principal{background-color: var(--variable-principal-color) !important;border-radius: 0.2rem;padding: 0.2rem;padding-left: 0.6rem;padding-right: 0.6rem;border: none;}.btn-color-principal:hover{text-decoration: underline;box-shadow:0 0 0 .15rem rgba(49,132,253,.5);}
 
 
 /*Header*/
@@ -63,254 +66,307 @@ html{
         }
     }
 
+/*FOOTER*/
+    .prop__lineas__footer{
+        height: 3px;
+    }
+    .prop__txt__footer{
+        color: white;
+    }
 
 /*PAGINA INDEX*/
-/*Comienza la pagina index*/
+    /*Comienza la pagina index*/
 
-.prop__img__portada__index{
-    height: 45rem;
-    object-fit:cover;
-}
-
-
-/*guitarras*/
-
-/*title guitar*/
-
-
-.new__title__index{
-    animation: new;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 2.5s;
-}
-    @keyframes new {
-        0%{background-color: #88EAF9; color:black;}
-        48%{background-color: #88EAF9; color:black;}
-        50%{background-color: #000; color: white;}
-        99%{background-color: #000; color: white;}
+    .prop__img__portada__index{
+        height: 35rem;
+        object-fit:cover;
     }
-.proyects__title__index{
-    animation: proyects;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 2.5s;
-}
-    @keyframes proyects{
-        0%{background-color: #88EAF9; color: black;}
-        48%{background-color: #88EAF9; color: black;}
-        49%{visibility: hidden;}
-        100%{visibility: hidden;}
+
+
+    /*guitarras*/
+
+    /*title guitar*/
+
+
+    .new__title__index{
+        animation: new;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 2.5s;
     }
-.style__title__index{
-    position: relative;
-    right: 12.5rem;
-    animation-name: style;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 2.5s;
-}
-   @media screen and (max-width:453px){
-        .style__title__index{
-            position: relative;
-            left: 4.5rem;
-            bottom: 2.1rem;
+        @keyframes new {
+            0%{background-color: #88EAF9; color:black;}
+            48%{background-color: #88EAF9; color:black;}
+            50%{background-color: #000; color: white;}
+            99%{background-color: #000; color: white;}
         }
+    .proyects__title__index{
+        animation: proyects;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 2.5s;
     }
-
-
-    @keyframes style{
-        0%{ visibility: hidden;}
-        49%{ visibility: hidden;}
-        50%{background-color: #000; color: white;}
-        100%{background-color: #000; color: white;}
-
+        @keyframes proyects{
+            0%{background-color: #88EAF9; color: black;}
+            48%{background-color: #88EAF9; color: black;}
+            49%{visibility: hidden;}
+            100%{visibility: hidden;}
+        }
+    .style__title__index{
+        position: relative;
+        right: 12.5rem;
+        animation-name: style;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 2.5s;
     }
-/*guitars effects*/
-.conteiner__guitarras__hover{
-    transition: all 0.3s;
-}
-
-.conteiner__guitarras__hover:hover{
-    transform: scale(1.03);
-}
-    
-        .btn__hover__index:hover{
-            text-decoration:underline;
+    @media screen and (max-width:453px){
+            .style__title__index{
+                position: relative;
+                left: 4.5rem;
+                bottom: 2.1rem;
+            }
         }
 
 
+        @keyframes style{
+            0%{ visibility: hidden;}
+            49%{ visibility: hidden;}
+            50%{background-color: #000; color: white;}
+            100%{background-color: #000; color: white;}
 
-/*title acc*/
-
-.prop__estilo__acc__index{
-    position: relative;
-    right: 15.5rem;
-}
-    @media  screen and (max-width: 1000px){
-        .prop__estilo__acc__index{
-            right: 13rem;
         }
+    /*guitars effects*/
+    .conteiner__guitarras__hover{
+        transition: all 0.3s;
     }
-    @media  screen and (max-width: 768px) {
-        .prop__estilo__acc__index{
-            right: 13rem;
+
+    .conteiner__guitarras__hover:hover{
+        transform: scale(1.03);
+    }
+        .linea__hover__guitarras__index{
+            background-color: #000;
+            width: 100%;
+            height: 2px;
+            transition: all 0.2s;
         }
-        
+        .conteiner__guitarras__hover:hover  .linea__hover__guitarras__index{
+            visibility: visible;
+            background-color: #A04E00;
+        }
+            .btn__hover__index:hover{
+                text-decoration:underline;
+            }
+
+
+    /* PROPIEDADES DE LOS ACCESORIOS EN EL INDEX */
+
+    /*title acc*/
+
+    .prop__estilo__acc__index{
+        position: relative;
+        right: 15.5rem;
     }
-/*keyframes en title guitar*/
+        @media  screen and (max-width: 1000px){
+            .prop__estilo__acc__index{
+                right: 13rem;
+            }
+        }
+        @media  screen and (max-width: 768px) {
+            .prop__estilo__acc__index{
+                right: 13rem;
+            }
+            
+        }
+    /*keyframes en title guitar*/
 
-/*carousel acc*/
+    /*carousel acc*/
 
-.prop__acc__img__carousel__index{
-    transition: all 0.3s;
-}
-
-.prop__acc__img__carousel__index:hover{
-    transform: scale(1.15);
-}
-
-
-@media screen and (max-width:768px) {
     .prop__acc__img__carousel__index{
-       object-fit: cover;
-       height: 10rem;
+        transition: all 0.3s;
     }
-}
 
-.bg__carousel__acc__index{
-    background-color: #0dcaf0cb;
-    backdrop-filter: blur(6px);
-    transition: all 0.5s;
-}
+    .prop__acc__img__carousel__index:hover{
+        transform: scale(1.15);
+    }
+        @media screen and (max-width:768px) {
+            .prop__acc__img__carousel__index{
+            object-fit: cover;
+            height: 10rem;
+            }
+        }
+        .texto__carrousel__acc__index{
+            color: var(--variable-principal-color) !important;
+        }
+
+    .bg__carousel__acc__index{
+        background-color: #0dcaf0cb;
+        backdrop-filter: blur(6px);
+        transition: all 0.5s;
+    }
     .bg__carousel__acc__index:hover{
         background-color: #000;
     }
 
-/*prop contenedores*/
-.bg__cont__acc__pedales__index{
-    background-color: rgb(0, 0, 0);
-    transition: all 0.2s;
-}
-
-
-/*lutheria*/
-.prop__title__lutheria__index{
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-}
-
-.personaliza__txt__index{
-    visibility: visible;
-    animation-name: personaliza;
-    animation-timing-function: ease;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-}
-    @keyframes personaliza{
-        0%{background-color: #88EAF9;}
-        48%{background-color: #88EAF9;}
-        49%{visibility: hidden;}
-        100%{visibility: hidden;}
-    }
-
-.repara__txt__index{
-    position: relative; right: 16.5rem;
-    visibility: hidden;
-    animation-name: repara;
-    animation-timing-function: ease;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-}
-    @keyframes repara{
-        0%{visibility: hidden;}
-        49%{visibility: hidden;}
-        50%{visibility: visible; background-color: #000; color: white;}
-        99%{visibility: visible; background-color: #000; color: white;}
-    }
-    @media screen and (max-width: 768px){
-        .repara__txt__index{
-            right: 13rem;
+        .bg__cont__acc__pedales__index{
+            background-color: rgb(0, 0, 0);
+            transition: all 0.2s;
         }
+
+    
+
+
+    /*LUTHERIA*/
+    .prop__title__lutheria__index{
+        margin-top: 10rem;
+        margin-bottom: 5rem;
     }
 
-.lutheria__txt__index{
-    right:8rem;
-}
+    .personaliza__txt__index{
+        visibility: visible;
+        animation-name: personaliza;
+        animation-timing-function: ease;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
+        @keyframes personaliza{
+            0%{background-color: #88EAF9;}
+            48%{background-color: #88EAF9;}
+            49%{visibility: hidden;}
+            100%{visibility: hidden;}
+        }
 
-.btn__lutheria__index:hover{
-    text-decoration: underline;
-}
+    .repara__txt__index{
+        position: relative; right: 16.5rem;
+        visibility: hidden;
+        animation-name: repara;
+        animation-timing-function: ease;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
+        @keyframes repara{
+            0%{visibility: hidden;}
+            49%{visibility: hidden;}
+            50%{visibility: visible; background-color: #000; color: white;}
+            99%{visibility: visible; background-color: #000; color: white;}
+        }
+        @media screen and (max-width: 768px){
+            .repara__txt__index{
+                right: 13rem;
+            }
+        }
+
+    .lutheria__txt__index{
+        right:8rem;
+    }
+
+    .btn__lutheria__index:hover{
+        text-decoration: underline;
+    }
 
 
 
-/*FIN DE LA PAGINA INEX*/
+/*FIN DE LA PAGINA INDEX*/
 
-/*FOOTER*/
-.prop__lineas__footer{
-    height: 3px;
-}
-.prop__txt__footer{
-    color: white;
-}
+
 
 
 /*COMIENZO DE LA PAGINA CONTACTO*/
 
-.prop__body__contacto{
+    .prop__body__contacto{
+        height: 100vh;
+        background-image: url("../assets/pagina__contacto/img-fondo/fondo.jpg");
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .prop__main__contacto{
+        padding-top: 7rem;
+    }
+    /**/
+    .height__conteiner__1__contacto{
+        height: 42rem;
+    }
+            
+            .bg__form__contacto{
+                background-color: rgba(0, 0, 0, 0.733);
+                backdrop-filter: blur(6px);
+            }
+                .bg__title__form__contacto{
+                    background-color: #88eaf9;
+                    color: black;
+                }
+                .color__label__form__contacto{
+                    color: white;
+                }
+            .bg__container__info__contacto{
+                background-color: rgba(0, 0, 0, 0.833);
+                backdrop-filter: blur(6px);
+            }
+                .color__text__info__contacto{
+                    color: white;
+                }
+
+    .height__conteiner__2__contacto{
+        background-color: rgba(0, 0, 0, 0.833);
+        backdrop-filter: blur(3px) ;
+    }
+        .div__bar__contacto{
+            background-color: white;
+            height: 5px;
+            width: 80%;
+        }
+        .prop__title__contacto2{
+            color:white;
+        }
+            .prop__linea__titulo__informacion__contacto{
+                background-color: white ;
+                height: 1px;
+
+            }
+
+        .prop__card__contacto{
+            transition: all 0.2s;
+        }
+        .prop__card__contacto:hover{
+            transform: scale(1.03);
+        }
+
+
+
+/*Comienzo de la pagina atencion al cliente*/
+
+.prop__body__at{
     height: 100vh;
-    background-image: url(../assets/pagina__contacto/img-fondo/fondo.jpg);
-    background-attachment:fixed;
-    object-fit:contain;
 }
+    .prop__main__at{
+        background-image: url("../assets/pagina_atencion/fondo/fondo.jpg");
+        background-size: cover;
+    }
 
-.prop__main__contacto{
-    padding-top: 7rem;
-}
-/**/
-.height__conteiner__1__contacto{
-    height: 42rem;
-}
-        
-        .bg__form__contacto{
-            background-color: rgba(0, 0, 0, 0.527);
+
+        .prop__container__info__ac{
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.267);
             backdrop-filter: blur(6px);
+            border: 1px solid var(--variable-principal-color);
         }
-            .bg__title__form__contacto{
-                background-color: #88eaf9;
-                color: black;
-            }
-            .color__label__form__contacto{
-                color: white;
-            }
-        .bg__container__info__contacto{
-            background-color: rgba(0, 0, 0, 0.466);
-            backdrop-filter: blur(6px);
-        }
-            .color__text__info__contacto{
-                color: white;
-            }
 
-.height__conteiner__2__contacto{
-    background-color: rgba(0, 0, 0, 0.616);
-    backdrop-filter: blur(3px) ;
+            .bg__container__forms__ac{
+                background-color: rgba(255, 255, 255, 0.74);
+            }
+                .bg__title__form__ac{
+                    background-color: var(--variable-principal-color);
+                }
+@media screen and (max-width:768px) {
+
+    .prop__main__at{
+        background-image: url("../assets/pagina_atencion/fondo/fondo-768.jpg");
+    }
 }
-    .div__bar__contacto{
-        background-color: white;
-        height: 5px;
-        width: 80%;
-    }
-    .prop__title__contacto2{
-        color:white;
 
-    }
 
-    .prop__card__contacto{
-        transition: all 0.2s;
-    }
-    .prop__card__contacto:hover{
-        transform: scale(1.03);
-    }
 
 /* COMIENZO DE LA PAGINA "GUITARRAS"*/
 
@@ -970,599 +1026,76 @@ html{
 }
 }
 
-
-/* COMIENZO DE LA PAGINA ATENCION CLIENTE*/
-.main__ac{
-    display: flex;
-}
-.body__linea__header__main{
-    background: #76efe8;
-    background: linear-gradient(0deg,#76efe8 0%, rgba(0,255,0,0) 80%);
-    background: -webkit-linear-gradient(0deg,#76efe8 0%, rgba(0,255,0,0) 80%);
-    background: -moz-linear-gradient(0deg,#76efe8 0%, rgba(0,255,0,0) 80%);
-    width: 100%;
-    height: 10px;
-}
-/*Seccion atencion al cliente*/
-.main__section__ac{
-    margin: 20px;
-}
-.main__section__titulo__ac{
-    position: relative;
-    margin: 20px;
-}
-.main__contenedor__rosado__ac{
-    background-color: #EF76BA;
-    height: 500px;
-    width: 984px;
-    border-radius: 20px;
-}
-.main__contenedor__gris__ac{
-    background-color: #ffffffa4;
-    position: relative;
-    margin: 10px;
-    top:10px ;
-    height: 480px;
-    border-radius: 10px;
-    padding: 20px;
-}
-.main__section__ac__contenedor__categorias{
-    background-color: white;
-    position: relative;
-    height: 41px;
-    width: 210;
-    border-radius: 10px;
-    padding: 5px;
-    margin-left:10px ;
-}
-.main__section__ac__detalles__texto{
-    position: relative;
-    margin: 10px;
-    width: 100%;
-    height: 300px;
-}
-.main__section__ac__enviar__borrar{
-    position: relative;
-    left: 750px;
-    margin: 10px;
-}
-.main__section__ac__contacto{
-    background-color: #767DEF;
-    position: fixed;
-    height: 100px;
-    width: 20%;
-    left: 80%;
-    top: 185px;
-    border-top-left-radius:10px;
-    border-bottom-left-radius: 10px;
-    padding: 10px;
-}
-.main__section__ac__contenedor__texto__contacto{
-    background-color: rgba(255, 255, 255, 0.753);
-    position: relative;
-    height: 80px;
-    width: 110%;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.main__section__ac__boton__contacto{
-    background-color: #000000;
-    color: white;
-    padding: 5px;
-    position: relative;
-    left:75px;
-    top: 20px;
-    border-radius: 5px;
-}
-.main__section__ac__texto__contacto{
-    position: relative;
-    left: 20px;
-    top: 5px;
-}
-
-/*COMIENZA LA PAGINA DE CONTACTO*/
-.main__section__principal__contacto{
-    display:flex;
-    height: 199px;
-}
-.main__section__contacto__ubicacion__datos{
-    display: flex;
-}
-/*IMAGEN PRINCIPAL*/
-.main__section__principal__contacto__texto__contenedor{
-    background: #ef76ba;
-    background: linear-gradient(180deg,#ef76ba 0%, #ef76ba 40%, #ef76ba 40%, rgba(0,255,0,0) 80%);
-    background: -webkit-linear-gradient(180deg,#ef76ba 0%, #ef76ba 40%, #ef76ba 40%, rgba(0,255,0,0) 80%);
-    background: -moz-linear-gradient(180deg,#ef76ba 0%, #ef76ba 40%, #ef76ba 40%, rgba(0,255,0,0) 80%);
-    height: 199px;
-    width: 200%;
-    margin-left: -1200px ;
-}
-.main__section__principal__contacto__texto{  
-    position: relative;
-    left: 1400px;
-    height: 199px;
-    width: 400px;
-    margin: 20px;
-    margin-top:35px ;
-}
-/*Divisor*/
-.main__contacto__divisor{
-    background-color: #000000;
-    width: 100%;
-    height: 2px;
-}
-/*Seccion de ubicacion*/
-
-.main__section__contacto__ubicacion{
-    width: 60%;
-}
-.main__section__contacto__ubicacion__contenedor{
-    margin-top: 20px;
-    margin-bottom: 40px;
-    background-color: #EF76BA;
-    position: relative;
-    width: 50%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 2px;
-}
-.main__section__contacto__ubicacion__texto{
-    position: relative;
-    left: 15%;
-}
-.main__section__contacto__contenedor__ubicacion__maps{
-    background-color: #ef76bba2;
-    position: relative;
-    height: 300px;
-    width: 300px;
-    border-top-left-radius:10px ;
-    border-top-right-radius: 10px;
-    left: 250px;
-}
-.main__section__contacto__ubicacion__maps{
-    width: 280px;
-    height: 280px;
-    margin: 10px;
-}
-.main__section__contacto__datos__contacto{
-    background-color: #a1a1a19c;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
-    width: 300px;
-    position: relative;
-    height: 250px;
-    left: 250px;
-}
-
-.main__section__datos__contacto__tel__email{
-    font-size: 100%;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-.main__section__contacto__datos__contacto__contenedor__horarios{
-    position: relative;
-    left: 50px;
-    margin-top:  30px;
-}
-.main__section__contacto__datos__contacto__horarios__titulo{
-    margin: 5px;
-    position: relative;
-    right: 20px;;
-    margin-bottom: 10px;
-}
-.main__section__contacto__datos__contacto__horarios{
-    position: relative;
-    left: 20px;
-}
-.main__section__contacto__datos__contacto__horarios--posicion{
-    position: relative;
-    left: 20px;
-}
-
-/*Sección de datos de contacto*/
-.main__section__contacto__datos__contenedor{
-    background-color: #EF76BA;
-    margin-top: 20px;
-    position: relative;
-    width: 500px;
-    height: 610px;
-    border-radius: 10px ;
-    padding: 20px;
-}
-.main__section__contacto__datos__contenedor__2{
-    background-color: rgba(255, 255, 255, 0.699);
-    height: 570px;
-    border-radius: 5px;
-}
-.main__section__contacto__datos__contenedor__texto__encabezado{
-    background-color: white;
-    border-top-left-radius:5px ;
-    border-top-right-radius: 5px;
-    padding: 2px;
-}
-
-/*Comienzo del interior de Contacto__datos*/
-
-.main__section__contacto__datos__texto__encabezado{
-    position: relative;
-    left: 13%;
-}
-.contacto__mail{
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 250px;
-    height: 30px;
-    border: 0px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px ;
-}
-.contacto__nombre__apellido{
-    border: 0px;
-    margin: 20px;
-    width: 200px;
-    height: 30px;
-}
-.contacto__telefono{
-    border: 0px;
-    width: 200px;
-    height: 30px;
-}
-
-.contacto__idea{
-    border: 0px;
-    position: relative;
-    margin: 20px;
-    width: 420px;
-    height: 300px;
-    border-radius: 5px;
-}
-.contacto__novedades_contenedor{
-    position: relative;
-    left: 20px;
-    display: flex;
-}
-.contacto__novedades__texto{
-    position: relative;
-    left: 5px;
-}
-.contacto__datos__enviar{
-    position: relative;
-    left: 150px;
-    padding: 5px;
-    bottom: 10px;
-}
-.contacto__datos__deshacer{
-    position: relative;
-    padding: 5px;
-    left: 200px;
-}
-
 /*COMIENZO DE LA PAGINA DE ACCESORIOS*/
+.prop__body__acc{
+    height: 100vh;
+}
 
-.main__section__principal__accesorios{
-    display: flex;
-    max-width: 100%;
-    height: 15rem;
-    background-color: #000;
-}
-.main__section__principal__contenedor__img__index{
-    width: 20%;
-    height: 15rem;
-}
-    .main__section__principal__accesorios__img{
-        height: 20rem;
-        object-fit: cover;
-        position: relative;
-        bottom: 5rem;
-        z-index: 0;
+
+    .bg__img__acc{
+        background-image: url("../assets/pagina__accesorios/img-principal.png");
+        height: 25rem ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
-
-.main__section__principal__accesorios__texto__fondo{
-    background: rgb(118,239,232);
-    background: linear-gradient(270deg, rgba(118,239,232,1) 26%, rgba(101,187,182,1) 72%, rgba(0,0,0,0) 100%);
-    width: 100%;
-    height: 15rem;
-    z-index: 1;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    transition: all 0.2s;
-}
-    .main__section__principal__accesorios__contenedor__texto h2{
-        color: rgba(0, 0, 0, 0.836);
-        font-size: 300%;
-        font-style: italic;
-        transition: all 0.5s;
-        position: relative;
-        left: 10rem;
+    /*CATEGORIAS*/
+    .linea__cat__acc{
+        background-color: #000;
+        height: 2px;
     }
-    .main__section__principal__accesorios__contenedor__texto h2:hover{
-        transform: scale(1.13);
-    }
-
-/*Comienzo de la seccion categorias y accesorios*/
-.main__section__categorias__accesorios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0px;
-}
-/*Categorias*/
-
-:root{
-    --variable-color-accesorios: #70DCD6;
-}
-
-.main__section__categorias__accesorios__categoria__accesorios{
-    height: 6rem;
-    width: 100%;
-}
-    .main__section__categorias__fondo__accesorios{
-        background-color: #e2e2e2;
-        height: 6rem;
-        margin-left:0.5rem; margin-right: 0.5rem;
-        border-radius: 0.2rem;
-    }
-        .main__section__contenedor__categorias{
-            margin-top: 0.5rem;
-            display: grid;
+        .prop__container__cat__acc li{
+            list-style: none;
         }
-            .main__section__categorias__titulo__accesorios{
-                background-color: var(--variable-color-accesorios);
-                display: inline-flex;
-                width: 50rem;
-                border-radius: 5px;
-                margin-bottom: 0.5rem; margin-top: 0.5rem;
-                justify-content: center;
-                justify-self: center;
+            .prop__container__cat__acc li a{
+                text-decoration: none;
+                color: #000;
             }
-            .main__section__navegacion__categorias__accesorios{
-                background-color: #00000071;
-                display: inline-flex;
-                align-items: center;
-                height: 3rem;
-                justify-content: space-evenly;
+            .prop__container__cat__acc li a:hover{
+                text-decoration: underline;
             }
-                .main__section__navegacion__categorias__accesorios--no__punto{
-                    list-style: none;
-                }
-                    .main__section__navegacion__categorias__texto__accesorios{
-                        background-color: var(--variable-color-accesorios);
-                        display: flex;
-                        padding: 0.5rem;
-                        border-radius: 5px;
-                        color: black;
-                        text-decoration: none;
-                        transition: all 0.3s;
-                    }
-                    .main__section__navegacion__categorias__texto__accesorios:hover{
-                        background-color: #000;
-                        color:var(--variable-color-accesorios);
-                        transform: scale(1.2);
-                    }
-/*Accesorios - ajustes generales*/  
+    /*ACCESORIOS*/
 
-.main__section__accesorios__accesorios{
-   background-color: rgb(255, 255, 255);
-   width: 75rem;
-    height: 100%;
-    box-shadow: -5px 0 15px -15px rgb(0, 0, 0), 5px 0 15px -15px rgb(0, 0, 0);
-    margin-top: 0.5rem;
-}
-
-.main__section__accesorios__img--tamaño{
-    height: 200px;
-    width: 200px;
-}
-.main__section__fondo__accesorios{
-    background-color: #000000;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.747);
-    border-radius: 5px;
-    padding: 15px;
-    width: 230px;
-    height: 230px;
-    transition: all 0.3s;
-}
-.main__section__fondo__accesorios:hover{
-    background-color:var(--variable-color-accesorios);
-    height: 250px ;
-}
-    .main__section__boton__accesorios{
-        color: black;
-        font-size: 100%;
-        text-decoration: none;
-        background-color:var(--variable-color-accesorios);
-        padding: 5px;
-        border-radius: 5px;
-        display: inline-flex;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-        bottom: 10%;
-        transition: all 0.2s;
+    .bg__img__pedalboards__acc{
+        background-image: url("../assets/pagina__accesorios/section_pedalboards/portada/pedalboard.jpg");
+        height: 10rem ;
+        background-repeat:no-repeat;
     }
-    .main__section__fondo__accesorios:hover .main__section__boton__accesorios{
-        background-color: #000;
-        color: var(--variable-color-accesorios);
-        bottom: 5%;
+    .bg__img__electronica__acc{
+        background-image: url("../assets/pagina__accesorios/section_electronica/portada/electronica.jpg") ;
+        height: 10rem;
+        background-repeat: no-repeat;
+        background-size:cover;
     }
 
-    .main__section__boton__accesorios__2{
-        color: black;
-        font-size: 100%;
-        text-decoration: none;
-        background-color: var(--variable-color-accesorios);
-        padding: 5px;
-        border-radius: 0px 0px 5px 5px;   
-        display: inline-flex;
-        justify-content: center;
-        position: relative;
-        width: 116%;
-        right: 8%;
-        transition: all 0.3s;
+    .linea__divisoria__cont__acc{
+        background-color: #000000;
+        height: 2px;
     }
-    .main__section__fondo__accesorios:hover .main__section__boton__accesorios__2{
-        background-color: #000;
-        color: white;
-        width: 75%;
-        border-radius: 0px 5px 5px 0px;
-    }
-
-
-
-
-/*Comienzo seccion de pedales*/
-
-    .main__section__pedales__contenedor__titulo__accesorios{
-        background-color: #000000e1;
-        margin-top: 1rem;
-        margin-bottom:50px ;
-        border-radius: 10px;
-        padding: 2px;
-        position: relative;
-        left: 31%;
-        width: 30rem;
-        display:flex;
-        justify-content: center;
-        border: 1px rgb(255, 255, 255) solid;
-    }
-    .main__section__pedales__titulo__accesorios{
-        font-size: 130%;
-        color: white;
-    }
-    .main__section__pedales__pedales__accesorios{
-        display: flex ;
-        justify-content: space-evenly;
-        margin: 50px;
-    }
-    .main__section__pedales__pedales__cargar__mas__accesorios{
-        background-color: var(--variable-color-accesorios);
-        padding: 5px;
-        position: relative;
-        left: 73%;
-        color: #000000;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .main__section__pedales__pedales__cargar__mas__accesorios:hover{
-        background-color: #000;
-        color: var(--variable-color-accesorios);
-    }
-
-
-
-/*Comienzo seccion pedalboards*/
-
-
-.main__section__pedalboards__contenedor__titulo__accesorios{
-    background-color: #3e7774;
-    margin-top: 2rem;
-    margin-bottom: 2rem ;
-    border-radius: 10px;
-    padding: 2px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 31%;
-    width: 30rem;
-}
-
-.main__section__pedalboards__pedalboards__accesorios{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px;
-}
-.main__section__pedalboards__cargar__mas__accesorios{
-    background-color: var(--variable-color-accesorios);
-    padding: 5px;
-    position: relative;
-    left: 46%;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-.main__section__pedalboards__cargar__mas__accesorios:hover{
-    background-color: #000;
-    color: var(--variable-color-accesorios);
-}
-/*Comienzo de Electronica*/
-.main__section__electronica__contenedor__titulo__accesorios{
-    background-color: #59beb9;
-    margin-top: 2rem;
-    margin-bottom:2rem ;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 2px;
-    border-top: 1px solid black; border-bottom: #000 1px solid; border-right: #000 1px solid;
-    display: flex;
-    justify-content: center;
-    position:relative;
-    width: 40%;
-}
-
-.main__section__electronica__electronica__accesorios{
-    display: flex;
-    justify-content:space-evenly;
-    margin: 50px;
-}
-.main__section__electronica__cargar__mas__accesorios{
-    background-color: var(--variable-color-accesorios);
-    padding: 5px;
-    position: relative;
-    left: 18%;
-    color: #000000;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-.main__section__electronica__cargar__mas__accesorios:hover{
-    background-color: #000;
-    color:var(--variable-color-accesorios);
-}
-
-/*Comienza la seccion de puas, etc*/
-.main__section__otros__contenedor__titulo__accesorios{
-    background-color: #70DCD6;
-    border-top: #000 1px solid; border-bottom:#000 1px solid ; border-left: #000 1px solid;
-    margin-top: 50px;
-    margin-bottom:50px ;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    position:relative;
-    width: 40%;
-    position: relative;
-    left: 60%;
-}   
-.main__section__otros__otros__accesorios{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px;
-}
-.main__section__otros__cargar__mas__accesorios{
-    background-color: var(--variable-color-accesorios);
-    padding: 5px;
-    position: relative;
-    left: 74%;
-    bottom: 1rem;
-    color: #000000;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-.main__section__otros__cargar__mas__accesorios:hover{
-    background-color: #000;
-    color: var(--variable-color-accesorios);
-}
-
+        .hover__container__acc__acc{
+           visibility: visible;
+           transition: all 0.2s;
+        }
+            .hover__container__acc__acc:hover{
+                visibility: visible;
+                transform: scale(1.02);
+            }
+        .hover__linea__acc__acc{
+            background-color: #000;
+            height: 1.2px;
+            transition: all 0.2s;
+        }
+            .hover__container__acc__acc:hover .hover__linea__acc__acc{
+                background-color: var(--variable-principal-color);
+                height: 2px;
+            }
+        .hover__txt_footer__acc__acc{
+            transition: all 0.2s;
+        }
+            .hover__container__acc__acc:hover .hover__txt_footer__acc__acc{
+                color: #000;
+                font-weight: bold;
+            }
 /*COMIENZO DE LA PAGINA VACIA*/
 .page__404__empty{
     display: grid;

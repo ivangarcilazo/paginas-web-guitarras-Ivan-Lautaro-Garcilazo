@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./css__bs/bootstrap.min.css">
 </head>
 
-<body class="container-xxl w-100 p-0" id="">
+<body class="container-fluid w-100 p-0" id="">
 
     <!--Encabezado de la pagina-->
-    <header class="prop__header container-xxl position-fixed ">
+    <header class="prop__header container-fluid position-fixed ">
 
         <nav class="navbar navbar-expand-lg navbar-light  radius__border__navbar__header prop__navbar">
 
@@ -58,8 +58,9 @@
 
         <!--Comienzo de la imagen principal-->
 
+          <!-- carrousel PRINCIPAL -->
         <section class="prop__portada__inicial__index">
-
+         
             <div id="carouselExampleCaptions" class="carousel slide w-100" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
@@ -113,47 +114,45 @@
         <div class="container-fluid d-flex justify-content-start">
           <h2 class="fs-1 font-monospace fw-bolder fst-italic m-5 m-md-5 position-relative prop__text__guitarras__index "> <span class="new__title__index p-1 rounded-start">New</span>  <span class="proyects__title__index rounded-end p-1 ">Proyects </span> <span class="style__title__index p-1 rounded-end">Style</span></h2>
         </div>
-        
+          <!--Guitarras-->
         <div class="row row-cols-1 row-cols-md-3 g-4">
                 
                 <div class="col conteiner__guitarras__hover">
-
-                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded bg-primary">
+        
+                  <div class="h-100 p-3 mb-5 bg-body rounded bg-primary">
+                    <div class="linea__hover__guitarras__index rounded"></div>
                     <img src="./assets/index__img/stratocaster-mid/strato-mid.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="fs-3 text fw-bold fst-italic">Stratocaster</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore dolores consectetur rem vel, nostrum, excepturi quas.</p>
+                      <h5 class="fs-3 text fw-bold fst-italic d-flex justify-content-start">Stratocaster</h5>
                     </div>
-                    <div class="card-footer">
-                      <small class="text-muted d-flex justify-content-end"><button type="button" class="btn btn-info btn__hover__index">¡Conoce más!</button></small>
-                    </div>
+                      <small class="text-muted d-flex justify-content-end"><button type="button" class="btn btn-color-principal  btn__hover__index">¡Conoce más!</button></small>
                   </div>
 
                 </div>
 
                 <div class="col conteiner__guitarras__hover">
-                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded bg-primary">
+                  <div class="h-100 p-3 mb-5 bg-body rounded bg-primary">
+                    <div class="linea__hover__guitarras__index rounded"></div>
                     <img src="./assets/index__img/teleecaster-mid/telecaster-mid.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="fs-3 text fw-bold fst-italic">Telecaster</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      <h5 class="fs-3 text fw-bold fst-italic d-flex justify-content-center">Telecaster</h5>
                     </div>
-                    <div class="card-footer">
-                      <small class="text-muted d-flex justify-content-end"><button type="button" class="btn btn-info btn__hover__index">¡Conoce más!</button></small>
-                    </div>
+
+                      <small class="text-muted d-flex justify-content-end"><button type="button" class="btn btn-color-principal  btn__hover__index">¡Conoce más!</button></small>
+
                   </div>
                 </div>
 
                 <div class="col conteiner__guitarras__hover">
-                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded bg-primary">
+                  <div class="h-100 p-3 mb-5 bg-body rounded bg-primary">
+                    <div class="linea__hover__guitarras__index rounded"></div>
                     <img src="./assets/index__img/jaguar-mid/jaguar-mid.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="fs-3 text fw-bold fst-italic">Jaguar</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      <h5 class="fs-3 text fw-bold fst-italic d-flex justify-content-end">Jaguar</h5>
                     </div>
-                    <div class="card-footer">
-                      <small class="text-muted d-flex justify-content-end"><button type="button" class="btn btn-info btn__hover__index">¡Conoce más!</button></small>
-                    </div>
+
+                      <small class="text-muted d-flex justify-content-end"><button type="button" class="btn btn-color-principal btn__hover__index">¡Conoce más!</button></small>
+
                   </div>
                 </div>
         </div>
@@ -162,50 +161,83 @@
 
        </section>
 
-        <!--Comienza la sección de categorias-->
-        <section id="accesorios" class="mt-5">
+        <!--Comienza la sección de Accesorios-->
+        <section id="accesorios" class="mt-3">
 
           <div class="container-fluid d-flex justify-content-start"></div>
           <h2 class="fs-1 font-monospace fw-bolder fst-italic m-5 m-md-5 position-relative prop__text__guitarras__index "> <span class="new__title__index p-1 rounded-start">+</span>  <span class="proyects__title__index rounded-end p-1 ">Accesorios </span> <span class="style__title__index p-1 rounded-end prop__estilo__acc__index">Estilo</span></h2>
           </div>
 
-
+          <!--accesorios-->
+                    <div class="container-md mt-4">
+          
+                      <div class="card-group mt-2">
+                        <div class="card">
+                          <img src="./assets/index__img/contenido-accesorios/pedales.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title bg-info p-1 d-flex justify-content-center">Pedales</h5>
+                            <div class="linea-bottom-1px"></div>
+                            <p class="card-text">Un pedal de guitarra (o pedal de efectos) es un dispositivo electrónico utilizado para alterar el sonido de una fuente.</p>
+                            <a href="./paginas-html/accesorios.html#pedales" class="btn btn-info">Conocelos >></a>
+                            
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="./assets/index__img/contenido-accesorios/otros.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title bg-warning p-1 d-flex justify-content-center">Varios</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa unde architecto dignissimos in cumque doloribus eum alias mollitia, temporibus.</p>
+                            <a href="./paginas-html/accesorios.html#otros" class="btn btn-warning">¡Adquierelos desde aquí!</a>
+            
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="./assets/index__img/contenido-accesorios/electronica.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title card-title bg-primary p-1 d-flex justify-content-center">Electronica</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in sit temporibus. Rem, itaque impedit saepe cupiditate culpa commodi. Rem earum voluptates sit aliquam mollitia sunt aliquid dolores a temporibus?</p>
+                            <a href="./paginas-html/accesorios.html#electronica" class="btn btn-primary">¡Adquierelos desde aquí!</a>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
           <!--accesorios carousel-->
-          <div id="carouselExampleDark" class="carousel carousel-dark slide container-md rounded bg__carousel__acc__index p-1 mx-auto prop__carousel__acc__index" data-bs-ride="carousel">
+          <div class="container-md"><p class="fs-6 badge bg-secondary fw-lighter m-0 mt-3">Acceso rápido >></p></div>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide container-md rounded bg__carousel__acc__index p-1 mx-auto prop__carousel__acc__index " data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
+
               <div class="carousel-item active" data-bs-interval="10000">
-
                 <div class="d-flex justify-content-evenly prop__cont__acc__index bg__cont__acc__pedales__index p-1 rounded">
-                     <a class="w-25" href=""><img src="./assets/index__img/carrousel-accesorios/pedales/chorus.jpg" class=" rounded w-100 prop__acc__img__carousel__index" alt="..."></a>
-                     <a class="w-25" href=""><img src="./assets/index__img/carrousel-accesorios/pedales/delay.jpg" class=" rounded w-100  prop__acc__img__carousel__index" alt=""></a>
-                      <a class="w-25" href=""><img src="./assets/index__img/carrousel-accesorios/pedales/wah.jpg" class=" rounded w-100 prop__acc__img__carousel__index" alt=""></a>
+                     <a class="w-25" href="./paginas-html/accesorios.html#pedales"><img src="./assets/index__img/carrousel-accesorios/pedales/chorus.jpg" class=" rounded w-100 prop__acc__img__carousel__index" alt="..."></a>
+                     <a class="w-25" href="./paginas-html/accesorios.html#pedales"><img src="./assets/index__img/carrousel-accesorios/pedales/delay.jpg" class=" rounded w-100  prop__acc__img__carousel__index" alt=""></a>
+                      <a class="w-25" href="./paginas-html/accesorios.html#pedales"><img src="./assets/index__img/carrousel-accesorios/pedales/wah.jpg" class=" rounded w-100 prop__acc__img__carousel__index" alt=""></a>
                 </div>
-
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>¡Click on!</h5>
                 </div>
               </div>
+
               <div class="carousel-item" data-bs-interval="2000">
                 <div class="d-flex justify-content-evenly prop__cont__acc__index">
-                  <a class="w-100" href=""><img src="./assets/index__img/carrousel-accesorios/pedalboards/Pedalboards.jpg" class="d-block w-100 rounded prop__acc__img__carousel__index" alt="..."></a>
+                  <a class="w-100" href="./paginas-html/accesorios.html#pedalboards"><img src="./assets/index__img/carrousel-accesorios/pedalboards/Pedalboards.jpg" class="d-block w-100 rounded prop__acc__img__carousel__index" alt="..."></a>
                </div>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>¡Click on!</h5>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="d-flex justify-content-evenly prop__cont__acc__index">
-                  <a class="w-100" href=""><img src="./assets/index__img/carrousel-accesorios/cables-otros/cables-otros.png" class=" d-block w-100 rounded prop__acc__img__carousel__index" alt="..."></a>
+                  <a class="w-100" href="./paginas-html/accesorios.html#otros"><img src="./assets/index__img/carrousel-accesorios/cables-otros/cables-otros.png" class=" d-block w-100 rounded prop__acc__img__carousel__index" alt="..."></a>
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>¡Click on!</h5>
                 </div>
               </div>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -217,65 +249,39 @@
             </button>
           </div>
 
-          <!--accesorios-->
-          <div class="container-md mt-4">
-            <h3 class="fs-4 fw-bold bg-info w-50 d-flex justify-content-center" >Conoce los distintos tipos de accesorios</h3>
-
-            <div class="card-group mt-2">
-              <div class="card">
-                <img src="./assets/index__img/contenido-accesorios/pedales.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title bg-info p-1 d-flex justify-content-center">Pedales</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./assets/index__img/contenido-accesorios/otros.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title bg-warning p-1 d-flex justify-content-center">Accesorios</h5>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa unde architecto dignissimos in cumque doloribus eum alias mollitia, temporibus.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./assets/index__img/contenido-accesorios/electronica.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title card-title bg-primary p-1 d-flex justify-content-center">Electronica</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in sit temporibus. Rem, itaque impedit saepe cupiditate culpa commodi. Rem earum voluptates sit aliquam mollitia sunt aliquid dolores a temporibus?</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           
         </section>
 
-        <section class="" id="lutheria">
+        <!-- lutheria -->
+        <section class="container-fluid" id="lutheria">
           <h2 class="prop__title__lutheria__index mb-5  ms-5"> <span class="fs-1 font-monospace fw-bolder fst-italic personaliza__txt__index p-1 rounded">Personaliza</span> <span class="fs-1 font-monospace fw-bolder fst-italic repara__txt__index p-1 rounded">Repara</span> <span class=" fs-6 badge bg-secondary fw-lighter position-relative lutheria__txt__index">Lutheria</span>
           </h2> 
 
-          <div class="container">
-            <div class="card shadow mb-3">
-            <iframe class="rounded-top" height="300px" src="https://www.youtube.com/embed/UI0dxCMWvpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <h5 class="card-title fs-2 fst-italic">¡Armamos tu guitarra personalizada!</h5>
-              
-              <p class="card-text"><button type="button" class="btn btn-info btn__lutheria__index">¡Envianos tu idea!</button></p>
+          <div class="container-fluid row">
+
+            <div class="container col-12 col-lg-6">
+              <div class="card shadow mb-3">
+              <iframe class="rounded-top" height="300px" src="https://www.youtube.com/embed/UI0dxCMWvpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title fs-2 fst-italic">¡Armamos tu guitarra personalizada!</h5>
+                  <p class="card-text"><a href="./paginas-html/contacto.html"><button type="button" class="btn btn-info btn__lutheria__index">¡Envianos tu idea!</button></a></p>
+                </div>
             </div>
-          </div>
+            </div>
+            
 
           
 
-          <div class="container w-100">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title fs-2 fst-italic">Reparamos tus problemas.</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae a expedita tempora exercitationem natus ipsum reiciendis dicta aut itaque et alias eaque dolor in earum, nisi facilis fugit modi.</p>
-                <p class="card-text"><button type="button" class="btn btn-secondary fst-italic btn__lutheria__index">¡Contactanos!</button></p>
+            <div class="container col-12 col-lg-6">
+              <div class="card shadow">
+                <div class="card-body">
+                  <h5 class="card-title fs-2 fst-italic">Reparamos tus problemas.</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae a expedita tempora exercitationem natus ipsum reiciendis dicta aut itaque et alias eaque dolor in earum, nisi facilis fugit modi.</p>
+                  <p class="card-text"><a href="./paginas-html/contacto.html"><button type="button" class="btn btn-secondary fst-italic btn__lutheria__index">¡Contactanos!</button></a></p>
+                </div>
+                <iframe class="rounded-bottom" height="300px" src="https://www.youtube.com/embed/8DdiNhMccb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <iframe class="rounded-bottom" height="300px" src="https://www.youtube.com/embed/8DdiNhMccb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
           </div>
             
           
@@ -284,11 +290,10 @@
     </main>
 
     <!--Comienzo del footer-->
-    <footer class="container-fluid bg-black  ">
-      <h2 class="fs-1  prop__txt__footer mb-5">Lo mejor a tu alcance.</h2>
+    <footer class="container-fluid bg-black pt-2 ">
   
       <div class="container-fluis row" >
-          <div class="col-12 col-xl-4">
+          <div class="col-12 col-lg-4">
               <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
               
               <div class="container mt-1">
@@ -302,7 +307,7 @@
                   
               </div>
           </div>
-          <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+          <div class="col-12 col-lg-4 mt-5 mt-xl-0">
               <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
 
               <h3 class="prop__txt__footer">Sobre nosotros:</h3>
@@ -310,7 +315,7 @@
                   <p class="prop__txt__footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quaerat et facere, fugiat quod dignissimos amet deleniti cupiditate cum totam, illum iure. Repellat officia dignissimos consequatur delectus perferendis? Tempore, ex.</p>
               </div>
           </div>
-          <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+          <div class="col-12 col-lg-4 mt-5 mt-xl-0">
               <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
               <h3 class="prop__txt__footer">Encontranos</h3>
               <div class="container mt-2 d-flex justify-content-center">

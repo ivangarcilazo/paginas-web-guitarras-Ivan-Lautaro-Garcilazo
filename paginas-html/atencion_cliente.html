@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="stylesheet" href="../css__bs/bootstrap.min.css">
 </head>
-<body class="cuerpo__size">
+<body class="container-fluid p-0 prop__body__at">
     <!--Encabezado de la pagina-->
     <!--Encabezado de la pagina-->
     <header class="prop__header container-fluid position-fixed">
@@ -53,86 +53,93 @@
           </nav>
     </header>
 
-    <div class="body__linea__header__main"></div>
+    <main class="container-fluid h-100 prop__main__at">
 
-    <main class="main__ac">
+          <div class="container-fluid w-100 h-100 d-flex justify-content-start align-items-center p-0 row">
 
-        <section class="main__section__ac">
+            <div class="container-md col-lg-6 col-md-12 h-75 mt-5 m-0 prop__container__info__ac rounded">
 
-            <h2 class="main__section__ac__texto">¿Cúal es su situación?</h2>
+              <h2 class="fs-1 fst-italic d-flex justify-content-center bg__title__form__ac rounded-top mt-2 p-2">¿Hubo algún problema?</h2>
 
-            <div class="main__contenedor__rosado__ac">
-                <div class="main__contenedor__gris__ac">
-                    <form action="">
+              <div class="cointainer-fluid bg__container__forms__ac h-75 p-3 d-flex flex-column justify-content-evenly">
 
-                        <select name="" id="" class="main__section__ac__contenedor__categorias">
-                            <option value="0">¿Cual es tu motivo?</option>
-                            <option value="Garantia">Garantía</option>
-                            <option value="Fallo cableado">Fallo de cableado/problemas electricos</option>
-                            <option value="Detalle estetico">Detalles estéticos</option>
-                            <option value="Otro">Otro</option>
-                        </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione aquí su problema.</option>
+                  <option value="1">Garantía.</option>
+                  <option value="2">Falla en la reparación.</option>
+                  <option value="3">Otro/s.</option>
+                </select>
 
-                        <div class="main__section__ac__contenedor__detalles__texto">
-                            <input class="main__section__ac__detalles__texto" type="text" placeholder="Ingrese más detalles de su problema">
-                        </div>
+                <form action="">
+                    <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fs-5">¿Puede detallarlo?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Por favor, aquí describanos sobre su problema"></textarea>
+                  </div>
 
-                        <div class="main__section__ac__enviar__borrar">
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar datos">
-                        </div>
-                    </form>
-                </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label fs-5">¿Cúal es su email para enviarle una respuesta?</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+
+                  <div class="form-check d-flex justify-content-between">
+                    <div>
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Acepto recibir novedades.
+                    </label>
+                    </div>
+                    <input type="submit" class="btn-color-principal" value="Enviar">
+                  </div>
+                </form>
+                
+              </div>
+             
             </div>
-        </section>
-        <section class="main__section__ac__contacto">
-            <div class="main__section__ac__contenedor__texto__contacto">
-                <h3 class="main__section__ac__texto__contacto">¿Buscas contactarnos?</h3>
-                <a class="main__section__ac__boton__contacto" href="./contacto.html">¡Contactanos!</a>
-            </div>
-        </section>
-        
+            
+          </div>
+            
     </main>
 
-    <!--Comienzo del footer-->
-    <footer class="container-fluid bg-black  ">
-        <h2 class="fs-1  prop__txt__footer mb-5">Lo mejor a tu alcance.</h2>
     
-        <div class="container-fluis row" >
-            <div class="col-12 col-xl-4">
-                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
-                
-                <div class="container mt-1">
-                    <h3 class="prop__txt__footer">Redes</h3>
-  
-                    <div class="d-flex justify-content-evenly">
-  
-                        <a href="https://www.facebook.com" target="_blank"><img src="../assets/footer_img/Facebook_logo_(square).png" class="img-fluid" width="50px" alt=""></a>
-                        <a href="https://www.instagram.com" target="_blank"><img src="../assets/footer_img/Instagram_logo.png" class="img-fluid" width="50px" alt=""></a>
-                        <a href="https://www.twitter.com" target="_blank"><img src="../assets/footer_img/twitter.jpg" class="img-fluid" width="50px" alt=""></div></a>
-                    
-                </div>
-            </div>
-            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
-                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
-  
-                <h3 class="prop__txt__footer">Sobre nosotros:</h3>
-                <div class="container">
-                    <p class="prop__txt__footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quaerat et facere, fugiat quod dignissimos amet deleniti cupiditate cum totam, illum iure. Repellat officia dignissimos consequatur delectus perferendis? Tempore, ex.</p>
-                </div>
-            </div>
-            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
-                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
-                <h3 class="prop__txt__footer">Encontranos</h3>
-                <div class="container mt-2 d-flex justify-content-center">
-                     <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4467612704943!2d-58.376230178812854!3d-34.567560509754735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x280de9a59d5c899a!2zMzTCsDM0JzAzLjIiUyA1OMKwMjInMTkuMiJX!5e0!3m2!1ses!2sar!4v1653523511278!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <p class="text-muted m-0">Copyrights 2022 © -Ivan</p>
-    </footer>
+
+    <!--Comienzo del footer-->
+    <footer class="container-fluid bg-black pt-2  ">
+    
+      <div class="container-fluis row" >
+          <div class="col-12 col-xl-4">
+              <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+              
+              <div class="container mt-1">
+                  <h3 class="prop__txt__footer">Redes</h3>
+
+                  <div class="d-flex justify-content-evenly">
+
+                      <a href="https://www.facebook.com" target="_blank"><img src="../assets/footer_img/Facebook_logo_(square).png" class="img-fluid" width="50px" alt=""></a>
+                      <a href="https://www.instagram.com" target="_blank"><img src="../assets/footer_img/Instagram_logo.png" class="img-fluid" width="50px" alt=""></a>
+                      <a href="https://www.twitter.com" target="_blank"><img src="../assets/footer_img/twitter.jpg" class="img-fluid" width="50px" alt=""></div></a>
+                  
+              </div>
+          </div>
+          <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+              <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+
+              <h3 class="prop__txt__footer">Sobre nosotros:</h3>
+              <div class="container">
+                  <p class="prop__txt__footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quaerat et facere, fugiat quod dignissimos amet deleniti cupiditate cum totam, illum iure. Repellat officia dignissimos consequatur delectus perferendis? Tempore, ex.</p>
+              </div>
+          </div>
+          <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+              <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+              <h3 class="prop__txt__footer">Encontranos</h3>
+              <div class="container mt-2 d-flex justify-content-center">
+                   <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4467612704943!2d-58.376230178812854!3d-34.567560509754735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x280de9a59d5c899a!2zMzTCsDM0JzAzLjIiUyA1OMKwMjInMTkuMiJX!5e0!3m2!1ses!2sar!4v1653523511278!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <p class="text-muted m-0">Copyrights 2022 © -Ivan</p>
+  </footer>
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

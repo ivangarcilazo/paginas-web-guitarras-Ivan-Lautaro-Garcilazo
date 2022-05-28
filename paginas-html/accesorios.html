@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css__bs/bootstrap.min.css">
 </head>
-<body class="cuerpo__size">
+<body class="container-fluid p-0 prop__body__acc">
     <!--Encabezado de la pagina-->
     <header class="prop__header container-fluid position-fixed">
 
@@ -52,148 +52,157 @@
           </nav>
     </header>
 
-    <main>
-        <section class="main__section__principal__accesorios">
-            <div class="main__section__principal__contenedor__img__index">
-                <img class="main__section__principal__accesorios__img" src="../assets/pagina__accesorios/imagen_cable_principal.png" alt="Cable guitarra">
-            </div>
+   <main class="container-fluid p-0">
 
-            <div class="main__section__principal__accesorios__texto__fondo">
+       <section class="container-fluid bg__img__acc p-0">
 
-                <div class="main__section__principal__accesorios__contenedor__texto">
-                    <h2>¡Cables para tus pedales!</h2>
+            <div class="container-fluid row">
+                <div class="container">
+
                 </div>
             </div>
-        </section>
+       </section>
 
-        <section class="main__section__categorias__accesorios">
+       <div class="container-fluid row">
 
-            <section class="main__section__categorias__accesorios__categoria__accesorios">
-                <div class="main__section__categorias__fondo__accesorios">
-                    <div class="main__section__contenedor__categorias">
-                        <h3 class="main__section__categorias__titulo__accesorios">¡Conoce las categorias!</h3>
+            <section class="container-fluid col-12 col-lg-2 mt-5 mt-lg-3">
 
-                        <div class="main__section__navegacion__categorias__accesorios">
+                    <div class="linea__cat__acc"></div>
 
-                            <li class="main__section__navegacion__categorias__accesorios--no__punto"><a class="main__section__navegacion__categorias__texto__accesorios" href="#pedales">Pedales</a></li>
-                            <li class="main__section__navegacion__categorias__accesorios--no__punto"><a class="main__section__navegacion__categorias__texto__accesorios" href="#pedalboards">Pedalboards</a></li>
-                            <li class="main__section__navegacion__categorias__accesorios--no__punto"><a class="main__section__navegacion__categorias__texto__accesorios" href="#electronica">Electronica</a></li>
-                            <li class="main__section__navegacion__categorias__accesorios--no__punto"><a class="main__section__navegacion__categorias__texto__accesorios" href="#otros">Puas, correas, y clavijas</a></li>
+                    <div class="container-fluid  w-100 d-flex flex-column align-items-center prop__container__cat__acc">
+                        <h3 class=" mt-3 fs-4 badge bg-dark fw-lighter">Acceso rapido ></h3>
+                        
+                        <li><a href="#pedales">Pedales</a></li>
+                        <li><a href="#pedalboards">Pedalboards</a></li>
+                        <li><a href="#electronica">Electronica</a></li>
+                        <li><a href="#otros">Otros</a></li>
+
+                    </div>
+                    
+            </section>
+
+            <section class="container-fluid col-12 col-lg-10">
+                <!-- pedales -->
+                <div class="container-fluid mt-2 mt-xl-5" id="pedales">
+
+                    <h3 class="fs-1 fw-bold fst-italic">Pedales</h3>
+                    <div class="container-fluid linea__divisoria__cont__acc rounded w-100 mb-4"></div>
+
+                    <div class="container-fluid row prop__cont__pedales__acc">
+
+                            <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                                <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_pedales/digital delay.png" alt=""></a>
+                                <div class="hover__linea__acc__acc w-75"></div>
+                                <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">Boss DD-7</figcaption>
+                            </div>
+                            <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc  d-flex flex-column align-items-center">
+                                <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_pedales/distortion.png" alt=""></a>
+                                <div class="hover__linea__acc__acc w-75"></div>
+                                <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">Boss DS-2</figcaption>
+                            </div>
+                            <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                                <a href=""><img class="img-fluid" src="/assets/pagina__accesorios/section_pedales/super chorus.png" alt=""></a>
+                                <div class="hover__linea__acc__acc w-75"></div>
+                                <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">Boss CE-3</figcaption>
+                            </div>
+
+                    </div>
+                </div>
+                <!-- pedalboards -->
+                
+                <div class="container-fluid mt-5" id="pedalboards">
+                    <h3 class="fs-1 fw-bold fst-italic">Pedalboards</h3>
+                    <div class="container-fluid linea__divisoria__cont__acc rounded w-100 mb-4 "></div>
+                    <div class="container-fluid bg__img__pedalboards__acc rounded border border-info"></div>
+
+                    <div class="container-fluid row prop__cont__pedales__acc d-flex align-items-md-center mt-3">
+
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_pedalboards/pedalboard_1.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">BOSS BDL-42</figcaption>
+                        </div>
+
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_pedalboards/pedalboard_2.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">BOSS BCB-60</figcaption>
                         </div>
                         
-                    </div> 
-                </div>
-            </section>
-                
-            <section class="main__section__accesorios__accesorios">
-                <div class="main__section__pedales__accesorios" id="pedales" >
-                        <div class="main__section__pedales__contenedor__titulo__accesorios">
-                            <h3 class="main__section__pedales__titulo__accesorios">Pedales</h3>
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc  d-flex flex-column justify-content-center align-items-center ">
+                            <a href=""><img class="img-fluid" src="/assets/pagina__accesorios/section_pedalboards/pedalboard_3.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">BOSS FO-03</figcaption>
                         </div>
 
-                        <div class="main__section__pedales__pedales__accesorios">
-                            <div class="main__section__fondo__accesorios">
-                                <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_pedales/super chorus.png" alt=""></a>
-                                <a class="main__section__boton__accesorios" href="./empty_page.html">Chorus</a>    
-                            </div>
-                            <div class="main__section__fondo__accesorios">
-                                <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_pedales/digital delay.png" alt=""></a>
-                                <a class="main__section__boton__accesorios" href="./empty_page.html">Digital Delay</a>
-                            </div>
-                            <div class="main__section__fondo__accesorios">
-                                <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_pedales/distortion.png" alt=""></a>
-                                <a class="main__section__boton__accesorios" href="./empty_page.html">Distorcion</a>
-                            </div>
-                        </div>
-                        <div>
-                            <a class="main__section__pedales__pedales__cargar__mas__accesorios" href="">Cargar más</a>
-                        </div>
-                </div>
-
-                <div class="main__section__pedalboards__accesorios" id="pedalboards">
-                        <div class="main__section__pedalboards__contenedor__titulo__accesorios">
-                            <h3 class="main__section__pedales__titulo__accesorios">Pedalboards</h3>
-                        </div>
-
-                    <div class="main__section__pedalboards__pedalboards__accesorios">
-                        <div class="main__section__fondo__accesorios">
-                            <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_pedalboards/pedalboard_1.jpg" alt=""></a>
-                            <a class="main__section__boton__accesorios" href="./empty_page.html">Pedalboard A</a>
-                        </div>
-                        <div class="main__section__fondo__accesorios">
-                            <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_pedalboards/pedalboard_2.jpg" alt=""></a>
-                            <a class="main__section__boton__accesorios" href="./empty_page.html">Pedalboard B</a>
-                        </div>
-                        <div class="main__section__fondo__accesorios">
-                            <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_pedalboards/pedalboard_3.jpg" alt=""></a>
-                            <a class="main__section__boton__accesorios" href="./empty_page.html">Pedalboard C</a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <a class="main__section__pedalboards__cargar__mas__accesorios" href="">Cargar más</a>
                     </div>
                 </div>
+                <!-- electronica -->
+                <div class="container-fluid mt-5" id="electronica">
+                    <h3 class="fs-1 fw-bold fst-italic">Electronica</h3>
+                    <div class="container-fluid linea__divisoria__cont__acc rounded w-100 mb-4"></div>
+                    <div class="container-fluid bg__img__electronica__acc rounded border border-info"></div>
+                    
+                    <div class="container-fluid row prop__cont__pedales__acc d-flex align-items-md-center justify-content-evenly">
 
-                <div class="main__section__electronica__accesorios" id="electronica">
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_electronica/muelles_guitarras.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end  hover__txt_footer__acc__acc">Muelles</figcaption>
+                        </div>
 
-                        <div class="main__section__electronica__contenedor__titulo__accesorios">
-                                <h3 class="main__section__pedales__titulo__accesorios">Electronica</h3>
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_electronica/pastilla_guitarra.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end  hover__txt_footer__acc__acc">Coils Stratocaster</figcaption>
                         </div>
-    
-                        <div class="main__section__electronica__electronica__accesorios">
-                            <div class="main__section__fondo__accesorios">
-                                <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_electronica/pastilla_guitarra.jpg" alt=""></a>
-                                <a class="main__section__boton__accesorios__2" href="./empty_page.html">Coils</a>
-                            </div>
-                            <div class="main__section__fondo__accesorios">
-                                <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_electronica/muelles_guitarras.jpg" alt=""></a>
-                                <a class="main__section__boton__accesorios__2" href="./empty_page.html">Muelles</a>
-                            </div>
-                            <div class="main__section__fondo__accesorios">
-                                <a href="./empty_page.html"><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_electronica/potenciometro_guitarras.jpg" alt=""></a>
-                                <a class="main__section__boton__accesorios__2" href="./empty_page.html">Potenciometros</a>
-                            </div>
+
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="/assets/pagina__accesorios/section_electronica/potenciometro_guitarras.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end  hover__txt_footer__acc__acc">Potenciometros</figcaption>
                         </div>
-                        <div>
-                            <a class="main__section__electronica__cargar__mas__accesorios" href="">Cargar más</a>
-                        </div>
+
+                    </div>
 
                 </div>
+                <!-- Otros accesorios -->
+                <div class="container-fluid mt-5 mb-5" id="otros">
+                    <h3 class="fs-1 fw-bold fst-italic">Más accesorios</h3>
+                    <div class="container-fluid linea__divisoria__cont__acc rounded w-100 mb-4"></div>
+                    <div class="container-fluid row prop__cont__pedales__acc d-flex align-items-md-center justify-content-evenly">
 
-                <div class="main__section__otros__accesorios" id="otros">
-                        <div class="main__section__otros__contenedor__titulo__accesorios">
-                            <h3 class="main__section__pedales__titulo__accesorios">Puas, correas y clavijas</h3>
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_puas/pua_1.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">Puas</figcaption>
                         </div>
 
-                        <div class="main__section__otros__otros__accesorios">
-                            <div class="main__section__fondo__accesorios">
-                               <a href=""><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_puas/pua_1.jpg" alt=""></a> 
-                               <a class="main__section__boton__accesorios__2" href="./empty_page.html">Puas</a>
-                            </div>
-                            <div class="main__section__fondo__accesorios">
-                                <a href=""><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_puas/correa_2.jpg" alt=""></a>
-                                <a class="main__section__boton__accesorios__2" href="./empty_page.html">Correas</a>
-                            </div>
-                            <div class="main__section__fondo__accesorios">
-                                <a href=""><img class="main__section__accesorios__img--tamaño" src="../assets/pagina__accesorios/section_puas/clavijas_3.jpg" alt=""></a>
-                                <a class="main__section__boton__accesorios__2" href="./empty_page.html">Clavijas</a>
-                            </div>
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="../assets/pagina__accesorios/section_puas/correa_2.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">Correas</figcaption>
                         </div>
-                        <div>
-                            <a class="main__section__otros__cargar__mas__accesorios" href="">Cargar más</a>
+                        
+                        <div class="container-fluid col-sm-4 col-12 hover__container__acc__acc d-flex flex-column align-items-center">
+                            <a href=""><img class="img-fluid" src="/assets/pagina__accesorios/section_puas/clavijas_3.jpg" alt=""></a>
+                            <div class="hover__linea__acc__acc w-75"></div>
+                            <figcaption class="figure-caption text-end hover__txt_footer__acc__acc">Clavijas</figcaption>
                         </div>
-                 </div>
+
+                    </div>
+                </div>
             </section>
 
-        </section>
-
+            
+            
+       </div>
+       
+   </main>
         
-    </main>
 
     <!--Comienzo del footer-->
-    <footer class="container-fluid bg-black  ">
-        <h2 class="fs-1  prop__txt__footer mb-5">Lo mejor a tu alcance.</h2>
+    <footer class="container-fluid bg-black pt-2  ">
     
         <div class="container-fluis row" >
             <div class="col-12 col-xl-4">

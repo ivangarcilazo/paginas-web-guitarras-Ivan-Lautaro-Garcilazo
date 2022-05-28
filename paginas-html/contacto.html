@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="stylesheet" href="../css__bs/bootstrap.min.css">
     </head>
-<body class="container-xxl p-0 prop__body__contacto">
+<body class="container-fluid p-0 prop__body__contacto">
 
         <!--Encabezado de la pagina-->
-        <header class="prop__header container-xxl position-fixed">
+        <header class="prop__header container-fluid position-fixed">
 
             <nav class="navbar navbar-expand-lg navbar-light  radius__border__navbar__header prop__navbar">
     
@@ -53,14 +53,19 @@
               </nav>
         </header>
         <!--main-->
-        <main class="container-xxl pt-xl-0 pe-0 ps-0 prop__main__contacto">
+        <main class="container-fluid pe-0 ps-0 prop__main__contacto">
 
-            <div class="container-xxl bg__img__contacto w-100 height__conteiner__1__contacto d-flex  flex-column flex-xl-row justify-content-center align-items-center pe-0 pt-5 pt-xl-0">
+          <!-- contenedor de informacion de contacto y formulario -->
+            <div class="container bg__img__contacto w-100 height__conteiner__1__contacto d-flex  flex-column justify-content-center align-items-center p-0 pt-5">
 
+                <!-- seccion de formulario -->
                 <div class="container bg__form__contacto mx-auto rounded p-2 prop__form__contacto prop__contacto1__contacto">
-                    <p class="fs-2 bg-primary prop__txt__footer rounded-top fw-bold d-flex justify-content-center">Nos pondremos en contacto contigo.</p>
 
-                    <div class="mb-3">
+                    <p class="fs-2 bg-principal prop__txt__footer rounded-top fw-bold d-flex justify-content-center">Nos pondremos en contacto contigo.</p>
+
+                  <!-- formulario -->
+                    <form action="">
+                      <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label color__label__form__contacto">Email address</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                       </div>
@@ -75,36 +80,47 @@
                       </div>
                       <div class="d-flex justify-content-end">
                         <button type="reset" class="btn btn-secondary me-5">Borrar</button>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-color-principal">Enviar</button>
                       </div>
+                    </form>
+                    
                 </div>
-                 
-                <div class="container w-100 h-100 d-flex justify-content-xl-end justify-content-lg-center m-0 pe-0 ps-0 ps-xl-5 mt-2 mt-xl-0 mb-5 mb-xl-0">
-                    <div class="container w-100 h-100 bg__container__info__contacto m-0 shadow pt-xl-5 ms-xl-5 mb-5 mb-md-0">
-                        <div class="container mt-xl-5">
-                            <h2 class="d-flex justify-content-strat rounded-top prop__txt__footer fst-italic">Informacion de contacto</h2>
+                 <!-- informacion de contacto -->
+                <div class="container w-100 h-100 d-flex justify-content-center m-0 pe-0 ps-0  mt-2  mb-5">
 
-                            <div class="container d-flex flex-column justify-content-evenly ">
+                    <div class="container w-100 h-100 bg__container__info__contacto m-0 shadow mb-5 mb-md-0">
+                      
+                        <div class="container">
+                          <!-- titulo de informacion -->
+                            <h2 class="d-flex justify-content-strat rounded-top prop__txt__footer fst-italic d-flex justify-content-center">Informacion de contacto</h2><div class="w-100 prop__linea__titulo__informacion__contacto"></div>
 
-                                <div class="container d-flex justify-content-start align-items-center mt-xl-5 p-0 ">
+                            <!-- contendor de informacion -->
+                            <div class="container-fluid">
+                              <div class="container d-flex flex-column flex-lg-row justify-content-evenly align-items-xl-center">
+
+                                <div class="container d-flex justify-content-start align-items-center p-0 ">
                                     <img class="img-fluid" src="../assets/pagina__contacto/info-contato-iconos/horarios-atencion.png" height="70px" width="70px" alt="">
                                     <p class="fs-5 fw-bold align-self-center m-0 color__text__info__contacto">De lunes a viernes - 9:00-20:30</p>
                                 </div>
 
-                                <div class="container d-flex justify-content-start align-items-center mt-xl-5 p-0">
+                                <div class="container d-flex justify-content-start align-items-center p-0">
                                     <img class="img-fluid" src="../assets/pagina__contacto/info-contato-iconos/ubicacion-icono.jpg" height="70px" width="70px" alt="">
                                     <p class="fs-4 fw-bold align-self-center m-0 color__text__info__contacto">Estamos en Buenos Aires 123</p>
                                 </div>
 
-                                <div class="container  d-flex justify-content-start align-items-center mt-xl-5">
+                                <div class="container  d-flex justify-content-start align-items-center ">
                                     <img class="img-fluid p-1" src="../assets/pagina__contacto/info-contato-iconos/llamada-icono.png" height="50px" width="50px"  alt="">
                                     <p class="fs-4 fw-bold align-self-center m-0 color__text__info__contacto">Llamanos al +1 234 5678</p>
                                 </div>
                             </div>
+                            </div>
+                            
                         </div>
                         
                     </div>
+
                 </div>
+
             </div>
 
             <div class=" container-fluid height__conteiner__2__contacto pt-2 mt-5 mt-md-0">
@@ -161,44 +177,43 @@
             </div>
         </main>
     <!--Comienzo del footer-->
-    <footer class="container-fluid bg-black  ">
-        <h2 class="fs-1  prop__txt__footer mb-5">Lo mejor a tu alcance.</h2>
+    <footer class="container-fluid bg-black pt-2  ">
     
-        <div class="container-fluis row" >
-            <div class="col-12 col-xl-4">
-                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
-                
-                <div class="container mt-1">
-                    <h3 class="prop__txt__footer">Redes</h3>
-  
-                    <div class="d-flex justify-content-evenly">
-  
-                        <a href="https://www.facebook.com" target="_blank"><img src="../assets/footer_img/Facebook_logo_(square).png" class="img-fluid" width="50px" alt=""></a>
-                        <a href="https://www.instagram.com" target="_blank"><img src="../assets/footer_img/Instagram_logo.png" class="img-fluid" width="50px" alt=""></a>
-                        <a href="https://www.twitter.com" target="_blank"><img src="../assets/footer_img/twitter.jpg" class="img-fluid" width="50px" alt=""></div></a>
-                    
-                </div>
-            </div>
-            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
-                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
-  
-                <h3 class="prop__txt__footer">Sobre nosotros:</h3>
-                <div class="container">
-                    <p class="prop__txt__footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quaerat et facere, fugiat quod dignissimos amet deleniti cupiditate cum totam, illum iure. Repellat officia dignissimos consequatur delectus perferendis? Tempore, ex.</p>
-                </div>
-            </div>
-            <div class="col-12 col-xl-4 mt-5 mt-xl-0">
-                <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
-                <h3 class="prop__txt__footer">Encontranos</h3>
-                <div class="container mt-2 d-flex justify-content-center">
-                     <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4467612704943!2d-58.376230178812854!3d-34.567560509754735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x280de9a59d5c899a!2zMzTCsDM0JzAzLjIiUyA1OMKwMjInMTkuMiJX!5e0!3m2!1ses!2sar!4v1653523511278!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <p class="text-muted m-0">Copyrights 2022 © -Ivan</p>
-    </footer>
+      <div class="container-fluis row" >
+          <div class="col-12 col-xl-4">
+              <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+              
+              <div class="container mt-1">
+                  <h3 class="prop__txt__footer">Redes</h3>
+
+                  <div class="d-flex justify-content-evenly">
+
+                      <a href="https://www.facebook.com" target="_blank"><img src="../assets/footer_img/Facebook_logo_(square).png" class="img-fluid" width="50px" alt=""></a>
+                      <a href="https://www.instagram.com" target="_blank"><img src="../assets/footer_img/Instagram_logo.png" class="img-fluid" width="50px" alt=""></a>
+                      <a href="https://www.twitter.com" target="_blank"><img src="../assets/footer_img/twitter.jpg" class="img-fluid" width="50px" alt=""></div></a>
+                  
+              </div>
+          </div>
+          <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+              <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+
+              <h3 class="prop__txt__footer">Sobre nosotros:</h3>
+              <div class="container">
+                  <p class="prop__txt__footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quaerat et facere, fugiat quod dignissimos amet deleniti cupiditate cum totam, illum iure. Repellat officia dignissimos consequatur delectus perferendis? Tempore, ex.</p>
+              </div>
+          </div>
+          <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+              <div class="container bg-white w-100 prop__lineas__footer rounded"></div>
+              <h3 class="prop__txt__footer">Encontranos</h3>
+              <div class="container mt-2 d-flex justify-content-center">
+                   <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4467612704943!2d-58.376230178812854!3d-34.567560509754735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x280de9a59d5c899a!2zMzTCsDM0JzAzLjIiUyA1OMKwMjInMTkuMiJX!5e0!3m2!1ses!2sar!4v1653523511278!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <p class="text-muted m-0">Copyrights 2022 © -Ivan</p>
+  </footer>
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
