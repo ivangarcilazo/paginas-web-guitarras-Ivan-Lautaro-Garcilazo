@@ -28,7 +28,11 @@ html{
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.363);
 }
-
+    @media screen and (max-width:992px) {
+        .radius__border__navbar__header{
+            background-color: rgba(0, 0, 0, 0.671);
+        }
+    }
     .prop__border__img__header{
         border-radius: 20px;
         width: 4em;
