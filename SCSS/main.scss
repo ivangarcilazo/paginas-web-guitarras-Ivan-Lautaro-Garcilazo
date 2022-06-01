@@ -1,0 +1,18 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+@import "utilities/variables";
+@import "layout/header";
+@import "layout/footer";
+@import "views/index";
+
+

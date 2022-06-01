@@ -1,0 +1,42 @@
+
+.prop__header{
+    z-index: 10;
+    .radius__border__navbar__header{/*prop__navbar__header*/
+        border-radius:  0px 0px 15px 15px ;
+        backdrop-filter: blur(6px);
+        background-color: rgba(0, 0, 0, 0.363);
+        
+        .prop__border__img__header{
+            border-radius: 20px;
+            width: 4em;
+        }
+
+        .boton__nav__header{
+            background-color: #c1c1c1bb;
+            border-radius: 0px;
+            padding: 0.5rem;
+            transition: 0.3s;
+
+            &:hover{
+                background-color:#76efe9bd;
+                text-decoration: underline;
+            }
+        }
+        @media screen and (max-width:990px){
+            .boton__nav__header{
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 0.5rem;
+            }
+        }
+    }    
+
+    @media screen and (max-width:992px) {
+        .radius__border__navbar__header{
+            background-color: rgba(0, 0, 0, 0.671);
+        }
+    }
+
+}
+
+    
