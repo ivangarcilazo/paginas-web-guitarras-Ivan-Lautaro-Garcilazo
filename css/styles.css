@@ -48,10 +48,6 @@ html {
 
 /*PAGINA INDEX*/
 /*Comienza la pagina index*/
-.prop__img__portada__index {
-  height: 35rem;
-  object-fit: cover; }
-
 /*GUITARRAS (TITLE, Y GUITARRAS)*/
 /*title guitar*/
 .new__title__index {
@@ -92,17 +88,13 @@ html {
   100% {
     visibility: hidden; } }
 
-.style__title__index, .prop__estilo__acc__index {
-  position: relative;
-  right: 50%;
+.style__title__index {
+  right: 25%;
+  top: -10%;
   animation-name: style;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-duration: 2.5s; }
-  @media screen and (max-width: 453px) {
-    .style__title__index .style__title__index, .prop__estilo__acc__index .style__title__index, .style__title__index .prop__estilo__acc__index, .prop__estilo__acc__index .prop__estilo__acc__index {
-      right: 5rem;
-      bottom: 2.1rem; } }
 
 @keyframes style {
   0% {
@@ -143,16 +135,6 @@ html {
     transform: scale(1.05); }
 
 /* PROPIEDADES DE LOS ACCESORIOS EN EL INDEX */
-/*title acc*/
-.prop__estilo__acc__index {
-  right: 20%; }
-  @media screen and (max-width: 768px) {
-    .prop__estilo__acc__index {
-      right: 45%; } }
-  @media screen and (max-width: 576px) {
-    .prop__estilo__acc__index {
-      right: 50%; } }
-
 /*botones ver más- accesorios*/
 .btn-principal-acc, .btn-secundario-acc, .btn-terciario-acc {
   background-color: #7BD3E0;
@@ -178,10 +160,30 @@ html {
   text-decoration: none; }
 
 /*carousel acc*/
-.prop__acc__img__carousel__index {
+.prop__cont__acc__index-1:hover, .prop__cont__acc__index-2:hover, .prop__cont__acc__index-3:hover {
+  visibility: visible; }
+
+.prop__cont__acc__index-1 .prop__acc__img__carousel__index, .prop__cont__acc__index-2 .prop__acc__img__carousel__index, .prop__cont__acc__index-3 .prop__acc__img__carousel__index, .prop__cont__acc__index-1 .linea__bottom__txt__acc__index, .prop__cont__acc__index-2 .linea__bottom__txt__acc__index, .prop__cont__acc__index-3 .linea__bottom__txt__acc__index {
   transition: all 0.3s; }
-  .prop__acc__img__carousel__index:hover {
-    transform: scale(1.05); }
+
+.prop__cont__acc__index-1:hover .prop__acc__img__carousel__index, .prop__cont__acc__index-2:hover .prop__acc__img__carousel__index, .prop__cont__acc__index-3:hover .prop__acc__img__carousel__index, .prop__cont__acc__index-1:hover .linea__bottom__txt__acc__index, .prop__cont__acc__index-2:hover .linea__bottom__txt__acc__index, .prop__cont__acc__index-3:hover .linea__bottom__txt__acc__index {
+  transform: scale(1.03); }
+
+.prop__cont__acc__index-1 .linea__bottom__txt__acc__index, .prop__cont__acc__index-2 .linea__bottom__txt__acc__index, .prop__cont__acc__index-3 .linea__bottom__txt__acc__index {
+  background-color: #7BD3E0;
+  height: 2px; }
+
+.prop__cont__acc__index-1:hover .linea__bottom__txt__acc__index, .prop__cont__acc__index-2:hover .linea__bottom__txt__acc__index, .prop__cont__acc__index-3:hover .linea__bottom__txt__acc__index {
+  transform: scale(1.3); }
+
+.prop__cont__acc__index-1 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-2 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-3 .prop__txt__pedalboards__acc__index {
+  color: white;
+  font-size: 2rem;
+  width: 23%;
+  z-index: 2;
+  transform: translate(-150%, 50%);
+  text-decoration: underline;
+  text-decoration-color: #7BD3E0; }
 
 /*LUTHERIA*/
 #lutheria .prop__title__lutheria__index {
@@ -252,10 +254,6 @@ html {
     text-decoration: underline; }
 
 /*FIN DE LA PAGINA INDEX*/
-
-
-
-/*COMIENZO DE LA PAGINA ACCESORIOS*/
 .prop__body__acc {
   height: 100vh;
   /*CATEGORIAS*/

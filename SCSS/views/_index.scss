@@ -1,10 +1,7 @@
 /*PAGINA INDEX*/
     /*Comienza la pagina index*/
 
-    .prop__img__portada__index{
-        height: 35rem;
-        object-fit:cover;
-    }
+
 
 
 /*GUITARRAS (TITLE, Y GUITARRAS)*/
@@ -39,19 +36,12 @@
     }
         
     .style__title__index{
-        position: relative;
-        right: 50%;
+        right: 25%;
+        top: -10%;
         animation-name: style;
         animation-iteration-count: infinite;
         animation-timing-function: ease;
         animation-duration: 2.5s;
-
-         @media screen and (max-width:453px){
-            .style__title__index{
-                right: 5rem;
-                bottom: 2.1rem;
-            }
-        }
 
         @keyframes style{
             0%{ visibility: hidden;}
@@ -98,18 +88,6 @@
     }
 
 /* PROPIEDADES DE LOS ACCESORIOS EN EL INDEX */
-    /*title acc*/
-    .prop__estilo__acc__index{
-        @extend .style__title__index;
-        right: 20%;
-        @media screen and (max-width: 768px) {
-            right:45%;
-        }
-        @media screen and (max-width: 576px) {
-            right:50%;
-        }
-    } 
-
 
     /*botones ver más- accesorios*/
     .btn-principal-acc{
@@ -136,13 +114,44 @@
         }
     }
      /*carousel acc*/
-    .prop__acc__img__carousel__index{
-        transition: all 0.3s;
-        
+     .prop__cont__acc__index-1{
         &:hover{
-            transform: scale(1.05);
+            visibility: visible;
+        }
+        .prop__acc__img__carousel__index{
+            transition: all 0.3s;
+        }
+        &:hover .prop__acc__img__carousel__index{
+            transform: scale(1.03);
+        }
+        .linea__bottom__txt__acc__index{
+            background-color: map-get($colores-g, color-primario );
+            height: 2px;
+            @extend .prop__acc__img__carousel__index;
+        }
+        &:hover .linea__bottom__txt__acc__index{
+            transform: scale(1.3);
+        }
+        
+        // propiedades de texto de pedalboards
+        .prop__txt__pedalboards__acc__index{
+            color: map-get($colores-g, blanco);
+            font-size: 2rem;
+            width: 23%;
+            z-index:2;
+            transform: translate(-150%, 50%);
+            text-decoration: underline;
+            text-decoration-color: map-get($colores-g, color-primario);
         }
 
+
+
+     }
+    .prop__cont__acc__index-2{
+     @extend .prop__cont__acc__index-1;
+    }
+    .prop__cont__acc__index-3{
+        @extend .prop__cont__acc__index-1;
     }
     
 
