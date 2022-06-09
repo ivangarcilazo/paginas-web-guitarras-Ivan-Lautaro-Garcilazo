@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,9 @@ html {
   scroll-behavior: smooth; }
 
 /*Colores*/
-/*botones*/
+/*maps*/
+/*Shadows y decoraciones*/
+/*Mixins Botones*/
 .prop__header {
   z-index: 10; }
   .prop__header .radius__border__navbar__header {
@@ -59,10 +62,10 @@ html {
 
 @keyframes new {
   0% {
-    background-color: #88EAF9;
+    background-color: #7BD3E0;
     color: black; }
   48% {
-    background-color: #88EAF9;
+    background-color: #7BD3E0;
     color: black; }
   50% {
     background-color: #000;
@@ -79,27 +82,26 @@ html {
 
 @keyframes proyects {
   0% {
-    background-color: #88EAF9;
+    background-color: #7BD3E0;
     color: black; }
   48% {
-    background-color: #88EAF9;
+    background-color: #7BD3E0;
     color: black; }
   49% {
     visibility: hidden; }
   100% {
     visibility: hidden; } }
 
-.style__title__index {
+.style__title__index, .prop__estilo__acc__index {
   position: relative;
-  right: 12.5rem;
+  right: 50%;
   animation-name: style;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-duration: 2.5s; }
   @media screen and (max-width: 453px) {
-    .style__title__index .style__title__index {
-      position: relative;
-      left: 4.5rem;
+    .style__title__index .style__title__index, .prop__estilo__acc__index .style__title__index, .style__title__index .prop__estilo__acc__index, .prop__estilo__acc__index .prop__estilo__acc__index {
+      right: 5rem;
       bottom: 2.1rem; } }
 
 @keyframes style {
@@ -126,40 +128,60 @@ html {
     transition: all 0.2s; }
   .conteiner__guitarras__hover:hover .linea__hover__guitarras__index {
     visibility: visible;
-    background-color: #7646c4;
-    transform: scale(1.03); }
+    background-color: #7BD3E0;
+    transform: scale(1.05); }
   .conteiner__guitarras__hover .btn__prop__primary {
-    background-color: #88EAF9;
+    background-color: black;
+    color: white;
     border: none;
-    transition: all 0.3s; }
+    transition: all 0.2s; }
     .conteiner__guitarras__hover .btn__prop__primary:hover {
       text-decoration: underline; }
   .conteiner__guitarras__hover:hover .btn__prop__primary {
-    background-color: #7646c4;
+    background-color: #7BD3E0;
+    color: black;
     transform: scale(1.05); }
 
 /* PROPIEDADES DE LOS ACCESORIOS EN EL INDEX */
 /*title acc*/
 .prop__estilo__acc__index {
-  position: relative;
-  right: 15.5rem;
-  /*keyframes en title guitar*/ }
-  @media screen and (max-width: 1000px) {
-    .prop__estilo__acc__index .prop__estilo__acc__index {
-      right: 13rem; } }
+  right: 20%; }
   @media screen and (max-width: 768px) {
-    .prop__estilo__acc__index .prop__estilo__acc__index {
-      right: 13rem; } }
+    .prop__estilo__acc__index {
+      right: 45%; } }
+  @media screen and (max-width: 576px) {
+    .prop__estilo__acc__index {
+      right: 50%; } }
+
+/*botones ver más- accesorios*/
+.btn-principal-acc, .btn-secundario-acc, .btn-terciario-acc {
+  background-color: #7BD3E0;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s; }
+  .btn-principal-acc:hover, .btn-secundario-acc:hover, .btn-terciario-acc:hover {
+    transform: scale(1.01);
+    color: black;
+    text-decoration: underline; }
+
+.btn-secundario-acc {
+  background-color: #D2FA7D;
+  width: 100%;
+  color: black;
+  text-decoration: none; }
+
+.btn-terciario-acc {
+  background-color: #77EDBB;
+  width: 100%;
+  color: black;
+  text-decoration: none; }
 
 /*carousel acc*/
 .prop__acc__img__carousel__index {
   transition: all 0.3s; }
   .prop__acc__img__carousel__index:hover {
-    transform: scale(1.15); }
-  @media screen and (max-width: 768px) {
-    .prop__acc__img__carousel__index .prop__acc__img__carousel__index {
-      object-fit: cover;
-      height: 10rem; } }
+    transform: scale(1.05); }
 
 /*LUTHERIA*/
 #lutheria .prop__title__lutheria__index {
@@ -168,16 +190,17 @@ html {
 
 #lutheria .personaliza__txt__index {
   visibility: visible;
+  background-color: #7BD3E0;
+  position: relative;
+  right: 5%;
   animation-name: personaliza;
   animation-timing-function: ease;
   animation-duration: 2.5s;
   animation-iteration-count: infinite; }
 
 @keyframes personaliza {
-  0% {
-    background-color: #88EAF9; }
-  48% {
-    background-color: #88EAF9; }
+  0% { }
+  48% { }
   49% {
     visibility: hidden; }
   100% {
@@ -185,15 +208,15 @@ html {
 
 #lutheria .repara__txt__index {
   position: relative;
-  right: 16.5rem;
+  right: 25%;
   visibility: hidden;
   animation-name: repara;
   animation-timing-function: ease;
   animation-duration: 2.5s;
   animation-iteration-count: infinite; }
   @media screen and (max-width: 768px) {
-    #lutheria .repara__txt__index .repara__txt__index {
-      right: 13rem; } }
+    #lutheria .repara__txt__index {
+      right: 50%; } }
 
 @keyframes repara {
   0% {
@@ -202,17 +225,78 @@ html {
     visibility: hidden; }
   50% {
     visibility: visible;
-    background-color: #000;
+    background-color: black;
     color: white; }
   99% {
     visibility: visible;
-    background-color: #000;
+    background-color: black;
     color: white; } }
 
 #lutheria .lutheria__txt__index {
   right: 8rem; }
 
-#lutheria .btn__lutheria__index:hover {
-  text-decoration: underline; }
+#lutheria .btn__lutheria__index {
+  background-color: #7BD3E0;
+  width: 100%;
+  color: black;
+  text-decoration: none; }
+  #lutheria .btn__lutheria__index:hover {
+    text-decoration: underline; }
+
+#lutheria .btn__lutheria__index--sec {
+  background-color: #bbbbbb;
+  width: 100%;
+  color: black;
+  text-decoration: none; }
+  #lutheria .btn__lutheria__index--sec:hover {
+    text-decoration: underline; }
 
 /*FIN DE LA PAGINA INDEX*/
+.prop__body__acc {
+  height: 100vh;
+  /*CATEGORIAS*/
+  /*ACCESORIOS*/ }
+  .prop__body__acc .bg__img__acc {
+    background-image: url("../../assets/pagina__accesorios/img-principal.png");
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    @media screen and (max-width: 768px) {
+      .prop__body__acc .bg__img__acc {
+        background-image: url("../../assets/pagina__accesorios/img-principal-768.png"); } }
+    @media screen and (max-width: 576px) {
+      .prop__body__acc .bg__img__acc {
+        background-image: url("../../assets/pagina__accesorios/img-principal-576.png");
+        background-size: none;
+        background-repeat: none;
+        background-attachment: none; } }
+  .prop__body__acc .prop__container__cat__acc li {
+    list-style: none; }
+  .prop__body__acc .prop__container__cat__acc li a {
+    text-decoration: none;
+    color: #000; }
+  .prop__body__acc .prop__container__cat__acc li a:hover {
+    text-decoration: underline; }
+  .prop__body__acc .linea__divisoria__cont__acc {
+    background-color: #7BD3E0;
+    height: 2px; }
+  .prop__body__acc .hover__container__acc__acc {
+    visibility: visible;
+    transition: all 0.2s; }
+    .prop__body__acc .hover__container__acc__acc:hover {
+      visibility: visible;
+      transform: scale(1.02); }
+    .prop__body__acc .hover__container__acc__acc .hover__linea__acc__acc {
+      background-color: #000;
+      height: 1.2px;
+      transition: all 0.2s; }
+    .prop__body__acc .hover__container__acc__acc:hover .hover__linea__acc__acc {
+      background-color: #77EDBB;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      height: 2px; }
+    .prop__body__acc .hover__container__acc__acc .hover__txt_footer__acc__acc {
+      transition: all 0.2s; }
+    .prop__body__acc .hover__container__acc__acc:hover .hover__txt_footer__acc__acc {
+      color: #000;
+      font-weight: bold; }

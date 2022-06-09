@@ -11,8 +11,12 @@ html{
 }
 
 @import "utilities/variables";
+@import "utilities/functions";
+@import "utilities/mixins";
+
 @import "layout/header";
 @import "layout/footer";
 @import "views/index";
+@import "views/accesorios"
 
 

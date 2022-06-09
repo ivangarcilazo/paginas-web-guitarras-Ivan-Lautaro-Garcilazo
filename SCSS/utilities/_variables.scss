@@ -1,8 +1,18 @@
 /*Colores*/
 $colorw:white;
 $colorb:black;
-$colorprimario:#88EAF9;
+
 $colorsecundario:#7646c4;
 $colorterciario: #218380;
 
-/*botones*/
+/*maps*/
+$colores-g:(
+    color-primario:#7BD3E0,
+    color-complementario:#D2FA7D,
+    color-terciario:#77EDBB,
+    negro:black,
+    blanco:white,
+);
+
+/*Shadows y decoraciones*/
+$shadows-g:0 .5rem 1rem rgba(0,0,0,.15);

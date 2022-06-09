@@ -1,0 +1,25 @@
+
+/*Mixins Botones*/
+@mixin botones ($boton-type, $width-btn, $color-btn){
+    @if $boton-type=="btn-principal"{
+        background-color: map-get($colores-g, color-primario );
+        width: $width-btn;
+        color:$color-btn;
+        text-decoration: none;
+    }@else if $boton-type=="btn-secundario"{
+        background-color: map-get($colores-g, color-complementario);
+        width: $width-btn;
+        color:$color-btn;
+        text-decoration: none;
+    }@else if $boton-type=="btn-gray-sec"{
+        background-color: rgb(187, 187, 187);
+        width: $width-btn;
+        color:$color-btn;
+        text-decoration: none;
+    }@else{
+        background-color: map-get($colores-g, color-terciario);
+        width: $width-btn;
+        color:$color-btn;
+        text-decoration: none;
+    }
+}

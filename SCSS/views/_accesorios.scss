@@ -1,0 +1,81 @@
+.prop__body__acc{
+    height: 100vh;
+
+    .bg__img__acc{
+            background-image: url("../../assets/pagina__accesorios/img-principal.png");
+            height: 25rem ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            @media screen and (max-width:768px) {
+                background-image:url("../../assets/pagina__accesorios/img-principal-768.png") ;
+            }
+            @media screen and (max-width:576px) {
+                background-image:url("../../assets/pagina__accesorios/img-principal-576.png") ;
+                background-size:none;
+                background-repeat: none;
+                background-attachment: none;
+            }
+        }
+        /*CATEGORIAS*/
+            .prop__container__cat__acc li{
+                list-style: none;
+            }
+                .prop__container__cat__acc li a{
+                    text-decoration: none;
+                    color: #000;
+                }
+                .prop__container__cat__acc li a:hover{
+                    text-decoration: underline;
+                }
+        /*ACCESORIOS*/
+
+        .linea__divisoria__cont__acc{
+            background-color: map-get($colores-g, color-primario );
+            height: 2px;
+        }
+            .hover__container__acc__acc{
+            visibility: visible;
+            transition: all 0.2s;
+
+                &:hover{
+                    visibility: visible;
+                    transform: scale(1.02);
+                }
+
+
+                .hover__linea__acc__acc{
+                background-color: #000;
+                height: 1.2px;
+                transition: all 0.2s;
+
+                }
+                &:hover .hover__linea__acc__acc{
+                    background-color:map-get($colores-g, color-terciario );
+                    box-shadow:$shadows-g;
+                    height: 2px;
+                }
+
+
+                .hover__txt_footer__acc__acc{
+                transition: all 0.2s;
+
+                }
+               &:hover .hover__txt_footer__acc__acc{
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+               
+            
+            
+
+
+
+
+
+
+}
+
+
+    
