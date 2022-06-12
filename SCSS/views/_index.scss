@@ -51,6 +51,8 @@
 
         }
     }
+
+    
  
     /*guitars effects*/
     .conteiner__guitarras__hover{
@@ -78,6 +80,10 @@
             transition: all 0.2s;
             &:hover{
                 text-decoration: underline;
+            }
+            .ancla__gs__principal__index{
+                color: white;
+                text-decoration: none;
             }
         }
         &:hover .btn__prop__primary{
@@ -195,14 +201,23 @@
          @keyframes repara{
             0%{visibility: hidden;}
             49%{visibility: hidden;}
-            50%{visibility: visible;background-color:map-get($colores-g,negro );color:map-get($colores-g,blanco);}
-            99%{visibility: visible;background-color:map-get($colores-g,negro );color:map-get($colores-g,blanco);}
+            50%{visibility: visible;background-color:map-get($colores-g,color-complementario);color:map-get($colores-g,negro);}
+            99%{visibility: visible;background-color:map-get($colores-g,color-complementario);color:map-get($colores-g,negro);}
         }
         
     }
-    .lutheria__txt__index{
+    .lutheria__txt__index-2{
         right:8rem;
     }
+
+
+    .linea__bottom__title__lutheria__index-2{
+        @include linea-bottom (map-get($colores-g, color-complementario), 2px, 65% )
+    }
+    .linea__bottom__title__lutheria__index-1{
+        @include linea-bottom (map-get($colores-g, color-primario), 2px, 95%)
+    }
+
     .btn__lutheria__index{
         @include botones ("btn-principal",100%, black);
         &:hover{
@@ -210,7 +225,7 @@
         }
     }
     .btn__lutheria__index--sec{
-        @include botones ("btn-gray-sec", 100%, black);
+        @include botones ("btn-secundario", 100%, black);
         &:hover{
             text-decoration:underline
         }

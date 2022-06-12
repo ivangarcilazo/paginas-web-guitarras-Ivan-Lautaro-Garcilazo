@@ -23,3 +23,10 @@
         text-decoration: none;
     }
 }
+
+@mixin linea-bottom ($color-linea, $height-linea, $width-linea) {
+    background-color: $color-linea;
+    height: $height-linea;
+    width: $width-linea;
+
+}

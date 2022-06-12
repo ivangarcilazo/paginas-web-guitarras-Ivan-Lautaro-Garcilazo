@@ -1,0 +1,48 @@
+/*Comienzo de la pagina atencion al cliente*/
+
+.prop__body__at{
+    height: 100vh;
+
+    .prop__main__at{
+            background-image: url("../assets/pagina_atencion/fondo/fondo.jpg");
+            background-size: cover;
+
+             .prop__container__info__ac{
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.267);
+            backdrop-filter: blur(6px);
+            border: 1px solid map-get($colores-g, color-primario );
+
+                .linea__bottom__title__form__ac{
+                    @include linea-bottom (map-get($colores-g,color-primario), 3px, 85%)
+                }
+
+                .bg__container__forms__ac{
+                    background-color: rgba(255, 255, 255, 0.74);
+                }
+                .bg__title__form__ac{
+                    background-color: map-get($colores-g, color-primario );
+                }
+                .btn__enviar__form__ac{
+                    @include botones ("btn-principal",5rem,map-get($colores-g, negro) )
+                }
+            }
+        }
+    @media screen and (max-width:768px) {
+        .prop__main__at{
+            background-image: url("../assets/pagina_atencion/fondo/fondo-768.jpg");
+            .prop__container__info__ac{
+                width: 100%;
+            }
+        }
+    
+}
+}
+    
+
+
+       
+
+            
+               
+

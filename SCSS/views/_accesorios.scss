@@ -2,16 +2,16 @@
     height: 100vh;
 
     .bg__img__acc{
-            background-image: url("../../assets/pagina__accesorios/img-principal.png");
+            background-image: url("../assets/pagina__accesorios/img-principal.png");
             height: 25rem ;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             @media screen and (max-width:768px) {
-                background-image:url("../../assets/pagina__accesorios/img-principal-768.png") ;
+                background-image:url("../assets/pagina__accesorios/img-principal-768.png") ;
             }
             @media screen and (max-width:576px) {
-                background-image:url("../../assets/pagina__accesorios/img-principal-576.png") ;
+                background-image:url("../assets/pagina__accesorios/img-principal-576.png") ;
                 background-size:none;
                 background-repeat: none;
                 background-attachment: none;

@@ -12,7 +12,16 @@ $colores-g:(
     color-terciario:#77EDBB,
     negro:black,
     blanco:white,
+    gris:#c1c1c1bb,
+);
+
+$font-sizes:(
+    75:75%,
+    100:100%,
+    120:120%,
+    150:150%,
 );
 
 /*Shadows y decoraciones*/
 $shadows-g:0 .5rem 1rem rgba(0,0,0,.15);
+$dec-none:none;

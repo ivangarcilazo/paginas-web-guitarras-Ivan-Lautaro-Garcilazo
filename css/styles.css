@@ -129,6 +129,9 @@ html {
     transition: all 0.2s; }
     .conteiner__guitarras__hover .btn__prop__primary:hover {
       text-decoration: underline; }
+    .conteiner__guitarras__hover .btn__prop__primary .ancla__gs__principal__index {
+      color: white;
+      text-decoration: none; }
   .conteiner__guitarras__hover:hover .btn__prop__primary {
     background-color: #7BD3E0;
     color: black;
@@ -227,15 +230,25 @@ html {
     visibility: hidden; }
   50% {
     visibility: visible;
-    background-color: black;
-    color: white; }
+    background-color: #D2FA7D;
+    color: black; }
   99% {
     visibility: visible;
-    background-color: black;
-    color: white; } }
+    background-color: #D2FA7D;
+    color: black; } }
 
-#lutheria .lutheria__txt__index {
+#lutheria .lutheria__txt__index-2 {
   right: 8rem; }
+
+#lutheria .linea__bottom__title__lutheria__index-2 {
+  background-color: #D2FA7D;
+  height: 2px;
+  width: 65%; }
+
+#lutheria .linea__bottom__title__lutheria__index-1 {
+  background-color: #7BD3E0;
+  height: 2px;
+  width: 95%; }
 
 #lutheria .btn__lutheria__index {
   background-color: #7BD3E0;
@@ -246,7 +259,7 @@ html {
     text-decoration: underline; }
 
 #lutheria .btn__lutheria__index--sec {
-  background-color: #bbbbbb;
+  background-color: #D2FA7D;
   width: 100%;
   color: black;
   text-decoration: none; }
@@ -259,17 +272,17 @@ html {
   /*CATEGORIAS*/
   /*ACCESORIOS*/ }
   .prop__body__acc .bg__img__acc {
-    background-image: url("../../assets/pagina__accesorios/img-principal.png");
+    background-image: url("../assets/pagina__accesorios/img-principal.png");
     height: 25rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; }
     @media screen and (max-width: 768px) {
       .prop__body__acc .bg__img__acc {
-        background-image: url("../../assets/pagina__accesorios/img-principal-768.png"); } }
+        background-image: url("../assets/pagina__accesorios/img-principal-768.png"); } }
     @media screen and (max-width: 576px) {
       .prop__body__acc .bg__img__acc {
-        background-image: url("../../assets/pagina__accesorios/img-principal-576.png");
+        background-image: url("../assets/pagina__accesorios/img-principal-576.png");
         background-size: none;
         background-repeat: none;
         background-attachment: none; } }
@@ -302,3 +315,205 @@ html {
     .prop__body__acc .hover__container__acc__acc:hover .hover__txt_footer__acc__acc {
       color: #000;
       font-weight: bold; }
+
+/*COMIENZO DE PAGINA DE GUITARRAS*/
+.prop__body__gs {
+  height: 100vh; }
+
+.bg__portada__prinipal__gs {
+  background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  height: 40rem; }
+  @media screen and (max-width: 768px) {
+    .bg__portada__prinipal__gs {
+      background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada-540.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: contain;
+      z-index: -1;
+      height: 20rem; } }
+  @media screen and (max-width: 540px) {
+    .bg__portada__prinipal__gs {
+      background-size: fill;
+      height: 17rem; } }
+
+/*contenedor categorias*/
+.prop__cont__cat__gs {
+  background-color: rgba(255, 255, 255, 0.507);
+  backdrop-filter: blur(6px);
+  bottom: 4rem;
+  border-radius: 0px 20px 0px 0px; }
+  @media screen and (max-width: 768px) {
+    .prop__cont__cat__gs {
+      border-radius: 20px 20px 0px 0px;
+      backdrop-filter: blur(3px); } }
+  .prop__cont__cat__gs .btn__cat__gs {
+    background-color: rgba(0, 0, 0, 0.692);
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s; }
+    @media screen and (max-width: 768px) {
+      .prop__cont__cat__gs .btn__cat__gs {
+        border-radius: 5px; } }
+    .prop__cont__cat__gs .btn__cat__gs:hover {
+      background-color: #7BD3E0;
+      color: black; }
+    .prop__cont__cat__gs .btn__cat__gs .linea__btn__cat__gs {
+      background-color: black;
+      height: 1px;
+      width: 0%;
+      transition: all 0.3s; }
+    .prop__cont__cat__gs .btn__cat__gs:hover .linea__btn__cat__gs {
+      width: 100%; }
+
+.prop__cont__guitarras__gs {
+  bottom: 4.2rem; }
+  .prop__cont__guitarras__gs .linea__divisoria__gs__gs-1, .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
+    visibility: visible;
+    background-color: #7BD3E0;
+    height: 3px;
+    animation-name: linea;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.7s; }
+
+@keyframes linea {
+  0% {
+    width: 0%;
+    background-color: #7BD3E0; }
+  25% {
+    width: 25%;
+    background-color: #7BD3E0; }
+  50% {
+    width: 50%;
+    background-color: #7BD3E0; }
+  75% {
+    width: 75%;
+    background-color: #7BD3E0; }
+  100% {
+    width: 100%;
+    background-color: #7BD3E0; } }
+  .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
+    background-color: black;
+    height: 2px; }
+  .prop__cont__guitarras__gs .prop__cont__gs {
+    /*Caracteristicas guitarras*/ }
+    .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs {
+      transition: all 0.3s; }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__img__gs__gs {
+        transition: all 0.3s; }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs, .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs-2 {
+        background-color: #7BD3E0;
+        height: 2px;
+        transition: all 0.3s;
+        width: 0%; }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__txt__gs__gs {
+        font-size: 100%;
+        transition: all 0.3s; }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs, .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs-2 {
+        width: 75%; }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .prop__img__gs__gs {
+        transform: scale(1.03); }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .prop__txt__gs__gs {
+        font-weight: bold; }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs-2 {
+        background-color: black; }
+      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs-2 {
+        width: 75%; }
+    .prop__cont__guitarras__gs .prop__cont__gs .btn__cargar__gs {
+      background-color: #7BD3E0;
+      width: 11rem;
+      color: black;
+      text-decoration: none;
+      transition: all 0.3s; }
+      .prop__cont__guitarras__gs .prop__cont__gs .btn__cargar__gs:hover {
+        text-decoration: underline;
+        transform: scale(1.02); }
+
+/*COMIENZO DE LA PAGINA CONTACTO*/
+.prop__body__contacto {
+  height: 100vh;
+  background-image: url("../assets/pagina__contacto/img-fondo/fondo.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .prop__body__contacto .prop__main__contacto {
+    padding-top: 7rem; }
+    .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto {
+      height: 42rem; }
+      .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__form__contacto {
+        background-color: rgba(0, 0, 0, 0.733);
+        backdrop-filter: blur(6px); }
+        .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__form__contacto .bg__title__form__contacto {
+          background-color: #7BD3E0;
+          color: black; }
+        .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__form__contacto .linea__bottom__title__form__contacto {
+          background-color: #7BD3E0;
+          height: 3px;
+          width: 75%; }
+        .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__form__contacto .color__label__form__contacto {
+          color: white; }
+      .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__container__info__contacto {
+        background-color: rgba(0, 0, 0, 0.833);
+        backdrop-filter: blur(6px); }
+        .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__container__info__contacto .color__text__info__contacto {
+          color: white; }
+      .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .btn__enviar__form__contacto {
+        background-color: #7BD3E0;
+        width: 5rem;
+        color: white;
+        text-decoration: none; }
+    .prop__body__contacto .prop__main__contacto .height__conteiner__2__contacto {
+      background-color: white; }
+      .prop__body__contacto .prop__main__contacto .height__conteiner__2__contacto .div__bar__contacto {
+        background-color: #7BD3E0;
+        height: 0.2rem;
+        width: 80%; }
+      .prop__body__contacto .prop__main__contacto .height__conteiner__2__contacto .prop__title__contacto2 {
+        color: black; }
+        .prop__body__contacto .prop__main__contacto .height__conteiner__2__contacto .prop__title__contacto2 .prop__linea__titulo__informacion__contacto {
+          background-color: white;
+          height: 1px; }
+      .prop__body__contacto .prop__main__contacto .height__conteiner__2__contacto .prop__card__contacto {
+        transition: all 0.2s; }
+        .prop__body__contacto .prop__main__contacto .height__conteiner__2__contacto .prop__card__contacto .linea__bottom__title__container-2__contacto {
+          background-color: #7BD3E0;
+          height: 2px;
+          width: 50%; }
+      .prop__body__contacto .prop__main__contacto .height__conteiner__2__contacto .prop__card__contacto:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+/**/
+/*Comienzo de la pagina atencion al cliente*/
+.prop__body__at {
+  height: 100vh; }
+  .prop__body__at .prop__main__at {
+    background-image: url("../assets/pagina_atencion/fondo/fondo.jpg");
+    background-size: cover; }
+    .prop__body__at .prop__main__at .prop__container__info__ac {
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.267);
+      backdrop-filter: blur(6px);
+      border: 1px solid #7BD3E0; }
+      .prop__body__at .prop__main__at .prop__container__info__ac .linea__bottom__title__form__ac {
+        background-color: #7BD3E0;
+        height: 3px;
+        width: 85%; }
+      .prop__body__at .prop__main__at .prop__container__info__ac .bg__container__forms__ac {
+        background-color: rgba(255, 255, 255, 0.74); }
+      .prop__body__at .prop__main__at .prop__container__info__ac .bg__title__form__ac {
+        background-color: #7BD3E0; }
+      .prop__body__at .prop__main__at .prop__container__info__ac .btn__enviar__form__ac {
+        background-color: #7BD3E0;
+        width: 5rem;
+        color: black;
+        text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .prop__body__at .prop__main__at {
+      background-image: url("../assets/pagina_atencion/fondo/fondo-768.jpg"); }
+      .prop__body__at .prop__main__at .prop__container__info__ac {
+        width: 100%; } }

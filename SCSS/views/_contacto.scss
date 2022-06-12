@@ -1,0 +1,93 @@
+/*COMIENZO DE LA PAGINA CONTACTO*/
+
+.prop__body__contacto{
+    height: 100vh;
+    background-image: url("../assets/pagina__contacto/img-fondo/fondo.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .prop__main__contacto{
+        padding-top: 7rem;
+
+
+        .height__conteiner__1__contacto{
+        height: 42rem;
+
+        .bg__form__contacto{
+                background-color: rgba(0, 0, 0, 0.733);
+                backdrop-filter: blur(6px);
+
+
+                .bg__title__form__contacto{
+                    background-color: map-get($colores-g, color-primario );
+                    color: black;
+                }
+                .linea__bottom__title__form__contacto{
+                    @include linea-bottom (map-get($colores-g, color-primario), 3px, 75%)
+                }
+
+                .color__label__form__contacto{
+                    color: white;
+                }
+            }
+                
+                
+            .bg__container__info__contacto{
+                background-color: rgba(0, 0, 0, 0.833);
+                backdrop-filter: blur(6px);
+
+                .color__text__info__contacto{
+                    color: white;
+                }
+            }
+            .btn__enviar__form__contacto{
+                @include botones ("btn-principal", 5rem, map-get($colores-g,blanco));
+            }
+                
+        }
+            
+            
+
+        .height__conteiner__2__contacto{
+            background-color: map-get($colores-g,blanco);
+
+            .div__bar__contacto{
+               @include linea-bottom (map-get($colores-g, color-primario), 0.2rem, 80%)
+            }
+
+            .prop__title__contacto2{
+                color: map-get($colores-g, negro );
+
+                .prop__linea__titulo__informacion__contacto{
+                    background-color: white ;
+                    height: 1px;
+
+                }
+            }
+            .prop__card__contacto{
+                transition: all 0.2s;
+
+                .linea__bottom__title__container-2__contacto{
+                    @include linea-bottom (map-get($colores-g, color-primario), 2px, 50%)
+                }
+
+            }
+            .prop__card__contacto:hover{
+                box-shadow: $shadows-g;
+            }
+        }
+    }
+
+}
+
+
+/**/
+
+    
+    
+        
+
+    
+    
