@@ -459,8 +459,8 @@ html {
     .prop__body__gs .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
       background-color: black;
       height: 2px; }
-    .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs {
-      /*Caracteristicas guitarras*/ }
+    
+      /*Caracteristicas guitarras*/
       .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs {
         transition: all 0.3s; }
         .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__img__gs__gs {
