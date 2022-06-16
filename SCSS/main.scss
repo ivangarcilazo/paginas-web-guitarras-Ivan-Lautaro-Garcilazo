@@ -8,10 +8,10 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
     scroll-behavior: smooth;
+    scroll-padding:7rem; 
 }
 
 @import "utilities/variables";
-@import "utilities/functions";
 @import "utilities/mixins";
 
 @import "layout/header";

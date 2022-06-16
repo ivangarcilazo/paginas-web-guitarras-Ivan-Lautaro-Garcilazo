@@ -22,6 +22,10 @@
                 text-decoration: underline;
             }
         }
+        .active__header{
+            text-decoration: underline;
+            background-color: #c1c1c1dc;
+        }
         @media screen and (max-width:990px){
             .boton__nav__header{
                 width: 100%;

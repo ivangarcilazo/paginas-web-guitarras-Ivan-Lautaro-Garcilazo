@@ -24,9 +24,15 @@
     }
 }
 
+/*Mixin linea de abajo*/
 @mixin linea-bottom ($color-linea, $height-linea, $width-linea) {
     background-color: $color-linea;
     height: $height-linea;
     width: $width-linea;
 
+}
+
+/*Mixin sombra personalizada*/
+@mixin shadows-p ($m1, $m2, $radio-d, $radio-e, $color-s) {
+    box-shadow: $m1 $m2 $radio-d $radio-e $color-s;
 }

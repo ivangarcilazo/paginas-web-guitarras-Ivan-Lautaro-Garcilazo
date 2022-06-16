@@ -6,13 +6,22 @@
     .prop__main__at{
             background-image: url("../assets/pagina_atencion/fondo/fondo.jpg");
             background-size: cover;
+            
 
              .prop__container__info__ac{
             width: 50%;
             background-color: rgba(0, 0, 0, 0.267);
             backdrop-filter: blur(6px);
             border: 1px solid map-get($colores-g, color-primario );
-
+            @media screen and (max-width:768px) {
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+                .clr__txt__title__at{
+                    color: map-get($colores-g, negro );
+                    @media screen and (max-width:768px) {
+                        color: map-get($colores-g, blanco );
+                    }
+                }
                 .linea__bottom__title__form__ac{
                     @include linea-bottom (map-get($colores-g,color-primario), 3px, 85%)
                 }

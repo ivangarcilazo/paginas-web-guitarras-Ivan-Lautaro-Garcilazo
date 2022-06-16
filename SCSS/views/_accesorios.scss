@@ -8,16 +8,25 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             @media screen and (max-width:768px) {
-                background-image:url("../assets/pagina__accesorios/img-principal-768.png") ;
+                background-image:url("../assets/pagina__accesorios/img-principal-768.png");
             }
             @media screen and (max-width:576px) {
-                background-image:url("../assets/pagina__accesorios/img-principal-576.png") ;
+                background-image:url("../assets/pagina__accesorios/img-principal.png");
+                max-width: 576px;
                 background-size:none;
                 background-repeat: none;
                 background-attachment: none;
+                height: 35rem;
             }
         }
         /*CATEGORIAS*/
+
+        .prop__container__cat__acc{
+            position: sticky;
+            top: 5rem;
+            right: 40%;
+           
+        }
             .prop__container__cat__acc li{
                 list-style: none;
             }
@@ -51,7 +60,7 @@
 
                 }
                 &:hover .hover__linea__acc__acc{
-                    background-color:map-get($colores-g, color-terciario );
+                    background-color:map-get($colores-g, color-primario );
                     box-shadow:$shadows-g;
                     height: 2px;
                 }

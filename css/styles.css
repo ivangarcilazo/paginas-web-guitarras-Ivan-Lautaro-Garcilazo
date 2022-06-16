@@ -7,12 +7,15 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  scroll-padding: 7rem; }
 
 /*Colores*/
 /*maps*/
 /*Shadows y decoraciones*/
 /*Mixins Botones*/
+/*Mixin linea de abajo*/
+/*Mixin sombra personalizada*/
 .prop__header {
   z-index: 10; }
   .prop__header .radius__border__navbar__header {
@@ -31,6 +34,9 @@ html {
       .prop__header .radius__border__navbar__header .boton__nav__header:hover {
         background-color: #76efe9bd;
         text-decoration: underline; }
+    .prop__header .radius__border__navbar__header .active__header {
+      text-decoration: underline;
+      background-color: #c1c1c1dc; }
     @media screen and (max-width: 990px) {
       .prop__header .radius__border__navbar__header .boton__nav__header {
         width: 100%;
@@ -138,6 +144,13 @@ html {
     transform: scale(1.05); }
 
 /* PROPIEDADES DE LOS ACCESORIOS EN EL INDEX */
+.shadow__prop__acc__index {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all 0.2s; }
+  .shadow__prop__acc__index:hover {
+    box-shadow: none;
+    transform: scale(0.997); }
+
 /*botones ver más- accesorios*/
 .btn-principal-acc, .btn-secundario-acc, .btn-terciario-acc {
   background-color: #7BD3E0;
@@ -282,10 +295,16 @@ html {
         background-image: url("../assets/pagina__accesorios/img-principal-768.png"); } }
     @media screen and (max-width: 576px) {
       .prop__body__acc .bg__img__acc {
-        background-image: url("../assets/pagina__accesorios/img-principal-576.png");
+        background-image: url("../assets/pagina__accesorios/img-principal.png");
+        max-width: 576px;
         background-size: none;
         background-repeat: none;
-        background-attachment: none; } }
+        background-attachment: none;
+        height: 35rem; } }
+  .prop__body__acc .prop__container__cat__acc {
+    position: sticky;
+    top: 5rem;
+    right: 40%; }
   .prop__body__acc .prop__container__cat__acc li {
     list-style: none; }
   .prop__body__acc .prop__container__cat__acc li a {
@@ -307,7 +326,7 @@ html {
       height: 1.2px;
       transition: all 0.2s; }
     .prop__body__acc .hover__container__acc__acc:hover .hover__linea__acc__acc {
-      background-color: #77EDBB;
+      background-color: #7BD3E0;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
       height: 2px; }
     .prop__body__acc .hover__container__acc__acc .hover__txt_footer__acc__acc {
@@ -317,69 +336,80 @@ html {
       font-weight: bold; }
 
 /*COMIENZO DE PAGINA DE GUITARRAS*/
+.html__gs {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  scroll-padding: 9rem; }
+  @media screen and (max-width: 768px) {
+    .html__gs {
+      scroll-padding: 7rem; } }
+
 .prop__body__gs {
-  height: 100vh; }
-
-.bg__portada__prinipal__gs {
-  background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  z-index: -1;
-  height: 40rem; }
-  @media screen and (max-width: 768px) {
-    .bg__portada__prinipal__gs {
-      background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada-540.png");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: contain;
-      z-index: -1;
-      height: 20rem; } }
-  @media screen and (max-width: 540px) {
-    .bg__portada__prinipal__gs {
-      background-size: fill;
-      height: 17rem; } }
-
-/*contenedor categorias*/
-.prop__cont__cat__gs {
-  background-color: rgba(255, 255, 255, 0.507);
-  backdrop-filter: blur(6px);
-  bottom: 4rem;
-  border-radius: 0px 20px 0px 0px; }
-  @media screen and (max-width: 768px) {
-    .prop__cont__cat__gs {
-      border-radius: 20px 20px 0px 0px;
-      backdrop-filter: blur(3px); } }
-  .prop__cont__cat__gs .btn__cat__gs {
-    background-color: rgba(0, 0, 0, 0.692);
-    font-size: 100%;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s; }
+  height: 100vh;
+  /*contenedor categorias*/
+  /*contenedor guitarras*/ }
+  .prop__body__gs .bg__portada__prinipal__gs {
+    background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    height: 40rem; }
     @media screen and (max-width: 768px) {
-      .prop__cont__cat__gs .btn__cat__gs {
-        border-radius: 5px; } }
-    .prop__cont__cat__gs .btn__cat__gs:hover {
-      background-color: #7BD3E0;
-      color: black; }
-    .prop__cont__cat__gs .btn__cat__gs .linea__btn__cat__gs {
-      background-color: black;
-      height: 1px;
-      width: 0%;
+      .prop__body__gs .bg__portada__prinipal__gs {
+        background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada-540.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        z-index: -1;
+        height: 20rem; } }
+    @media screen and (max-width: 540px) {
+      .prop__body__gs .bg__portada__prinipal__gs {
+        background-size: fill;
+        height: 17rem; } }
+  .prop__body__gs .prop__cont__cat__gs {
+    position: sticky;
+    top: 5.5rem;
+    background-color: rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(6px);
+    bottom: 3.5rem;
+    border-radius: 0px 20px 0px 0px;
+    z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .prop__body__gs .prop__cont__cat__gs {
+        position: relative;
+        top: 0rem;
+        border-radius: 20px 20px 0px 0px;
+        backdrop-filter: blur(3px); } }
+    .prop__body__gs .prop__cont__cat__gs .btn__cat__gs {
+      background-color: rgba(0, 0, 0, 0.692);
+      font-size: 100%;
+      color: white;
+      text-decoration: none;
       transition: all 0.3s; }
-    .prop__cont__cat__gs .btn__cat__gs:hover .linea__btn__cat__gs {
-      width: 100%; }
-
-.prop__cont__guitarras__gs {
-  bottom: 4.2rem; }
-  .prop__cont__guitarras__gs .linea__divisoria__gs__gs-1, .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
-    visibility: visible;
-    background-color: #7BD3E0;
-    height: 3px;
-    animation-name: linea;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-duration: 0.7s; }
+      @media screen and (max-width: 768px) {
+        .prop__body__gs .prop__cont__cat__gs .btn__cat__gs {
+          border-radius: 5px; } }
+      .prop__body__gs .prop__cont__cat__gs .btn__cat__gs:hover {
+        background-color: #7BD3E0;
+        color: black; }
+      .prop__body__gs .prop__cont__cat__gs .btn__cat__gs .linea__btn__cat__gs {
+        background-color: black;
+        height: 1px;
+        width: 0%;
+        transition: all 0.3s; }
+      .prop__body__gs .prop__cont__cat__gs .btn__cat__gs:hover .linea__btn__cat__gs {
+        width: 100%; }
+  .prop__body__gs .prop__cont__guitarras__gs {
+    bottom: 4.2rem; }
+    .prop__body__gs .prop__cont__guitarras__gs .linea__divisoria__gs__gs-1, .prop__body__gs .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
+      visibility: visible;
+      background-color: #7BD3E0;
+      height: 3px;
+      animation-name: linea;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-duration: 0.7s; }
 
 @keyframes linea {
   0% {
@@ -397,42 +427,42 @@ html {
   100% {
     width: 100%;
     background-color: #7BD3E0; } }
-  .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
-    background-color: black;
-    height: 2px; }
-  .prop__cont__guitarras__gs .prop__cont__gs {
-    /*Caracteristicas guitarras*/ }
-    .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs {
-      transition: all 0.3s; }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__img__gs__gs {
+    .prop__body__gs .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
+      background-color: black;
+      height: 2px; }
+    .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs {
+      /*Caracteristicas guitarras*/ }
+      .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs {
         transition: all 0.3s; }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs, .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs-2 {
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__img__gs__gs {
+          transition: all 0.3s; }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs, .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs-2 {
+          background-color: #7BD3E0;
+          height: 2px;
+          transition: all 0.3s;
+          width: 0%; }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__txt__gs__gs {
+          font-size: 100%;
+          transition: all 0.3s; }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs, .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs-2 {
+          width: 75%; }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .prop__img__gs__gs {
+          transform: scale(1.03); }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .prop__txt__gs__gs {
+          font-weight: bold; }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs-2 {
+          background-color: black; }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs-2 {
+          width: 75%; }
+      .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .btn__cargar__gs {
         background-color: #7BD3E0;
-        height: 2px;
-        transition: all 0.3s;
-        width: 0%; }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__txt__gs__gs {
-        font-size: 100%;
+        width: 11rem;
+        color: black;
+        text-decoration: none;
         transition: all 0.3s; }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs, .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs-2 {
-        width: 75%; }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .prop__img__gs__gs {
-        transform: scale(1.03); }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .prop__txt__gs__gs {
-        font-weight: bold; }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .linea__under__text__guitarras__gs-2 {
-        background-color: black; }
-      .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs:hover .linea__under__text__guitarras__gs-2 {
-        width: 75%; }
-    .prop__cont__guitarras__gs .prop__cont__gs .btn__cargar__gs {
-      background-color: #7BD3E0;
-      width: 11rem;
-      color: black;
-      text-decoration: none;
-      transition: all 0.3s; }
-      .prop__cont__guitarras__gs .prop__cont__gs .btn__cargar__gs:hover {
-        text-decoration: underline;
-        transform: scale(1.02); }
+        .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .btn__cargar__gs:hover {
+          text-decoration: underline;
+          transform: scale(1.02); }
 
 /*COMIENZO DE LA PAGINA CONTACTO*/
 .prop__body__contacto {
@@ -499,6 +529,14 @@ html {
       background-color: rgba(0, 0, 0, 0.267);
       backdrop-filter: blur(6px);
       border: 1px solid #7BD3E0; }
+      @media screen and (max-width: 768px) {
+        .prop__body__at .prop__main__at .prop__container__info__ac {
+          background-color: rgba(0, 0, 0, 0.6); } }
+      .prop__body__at .prop__main__at .prop__container__info__ac .clr__txt__title__at {
+        color: black; }
+        @media screen and (max-width: 768px) {
+          .prop__body__at .prop__main__at .prop__container__info__ac .clr__txt__title__at {
+            color: white; } }
       .prop__body__at .prop__main__at .prop__container__info__ac .linea__bottom__title__form__ac {
         background-color: #7BD3E0;
         height: 3px;

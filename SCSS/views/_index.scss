@@ -95,6 +95,16 @@
 
 /* PROPIEDADES DE LOS ACCESORIOS EN EL INDEX */
 
+
+    // Propiedades de la sombra y hover cards accesorios
+    .shadow__prop__acc__index{
+        box-shadow: $shadows-g;
+        transition: all 0.2s;
+        &:hover{
+            box-shadow: none;
+            transform: scale(0.997);
+        }
+    }
     /*botones ver más- accesorios*/
     .btn-principal-acc{
         @include botones ("btn-principal", 100%, black);
