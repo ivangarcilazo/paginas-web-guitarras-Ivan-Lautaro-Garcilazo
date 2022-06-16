@@ -379,7 +379,7 @@ html {
   /*contenedor categorias*/
   /*contenedor guitarras*/ }
   .prop__body__gs .bg__portada__prinipal__gs {
-    background-image: url("../../assets/paginas_guitarra/img-portada/guitar-portada.png.jpg");
+    background-image: url("../assets/paginas_guitarra/img-portada/guitar-portada.png.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -459,8 +459,8 @@ html {
     .prop__body__gs .prop__cont__guitarras__gs .linea__divisoria__gs__gs-2 {
       background-color: black;
       height: 2px; }
-    
-      /*Caracteristicas guitarras*/
+    .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs {
+      /*Caracteristicas guitarras*/ }
       .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs {
         transition: all 0.3s; }
         .prop__body__gs .prop__cont__guitarras__gs .prop__cont__gs .prop__cont__ind__gs .prop__img__gs__gs {
