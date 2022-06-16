@@ -1,9 +1,6 @@
 /*PAGINA INDEX*/
     /*Comienza la pagina index*/
 
-
-
-
 /*GUITARRAS (TITLE, Y GUITARRAS)*/
 
     /*title guitar*/
@@ -19,6 +16,7 @@
             50%{background-color: #000; color: white;}
             99%{background-color: #000; color: white;}
         }
+        
     }
         
     .proyects__title__index{
@@ -33,6 +31,7 @@
             49%{visibility: hidden;}
             100%{visibility: hidden;}
         }
+        
     }
         
     .style__title__index{
@@ -50,6 +49,7 @@
             100%{background-color: #000; color: white;}
 
         }
+       
     }
 
     
@@ -158,6 +158,30 @@
             transform: translate(-150%, 50%);
             text-decoration: underline;
             text-decoration-color: map-get($colores-g, color-primario);
+            @media screen and (max-width:980px) {
+                bottom: 5.5rem;
+                right: -2rem;
+                width: 40%;
+
+            }
+            @media screen and (max-width:641px) {
+                bottom: 5.5rem;
+                left: 35rem;
+                width: 60%;
+                font-size: map-get($font-sizes,150);
+            }
+            @media screen and (max-width:500px) {
+                bottom: 5.5rem;
+                left: 30rem;
+                width: 60%;
+                font-size: map-get($font-sizes,150);
+            }
+            @media screen and (max-width:350px) {
+                bottom: 5.5rem;
+                left: 20rem;
+                width: 60%;
+                font-size: map-get($font-sizes,150);
+            }
         }
 
 
@@ -206,6 +230,9 @@
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
         @media  screen and (max-width:768px) {
+            right: 25%;
+        }
+        @media  screen and (max-width:540px) {
             right: 50%;
         }
          @keyframes repara{
@@ -227,15 +254,17 @@
     .linea__bottom__title__lutheria__index-1{
         @include linea-bottom (map-get($colores-g, color-primario), 2px, 95%)
     }
-
+    
     .btn__lutheria__index{
         @include botones ("btn-principal",100%, black);
+        z-index: 2;
         &:hover{
             text-decoration:underline
         }
     }
     .btn__lutheria__index--sec{
         @include botones ("btn-secundario", 100%, black);
+        z-index: 2;
         &:hover{
             text-decoration:underline
         }

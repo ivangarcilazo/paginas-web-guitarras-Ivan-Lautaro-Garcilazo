@@ -9,13 +9,15 @@
             background-attachment: fixed;
             @media screen and (max-width:768px) {
                 background-image:url("../assets/pagina__accesorios/img-principal-768.png");
+                max-width: 576px;
+                background-size: cover;
             }
             @media screen and (max-width:576px) {
                 background-image:url("../assets/pagina__accesorios/img-principal.png");
                 max-width: 576px;
-                background-size:none;
+                background-size:cover;
                 background-repeat: none;
-                background-attachment: none;
+                background-attachment:none;
                 height: 35rem;
             }
         }

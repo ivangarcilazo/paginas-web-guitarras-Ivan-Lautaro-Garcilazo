@@ -1,0 +1,15 @@
+/*pagina vacia*/
+.bg__empty{
+    background-image: url(../assets/empty/empty.r.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-x: center;
+}
+.a_empty{
+    text-decoration: none;
+    color: rgb(228, 226, 225);
+}
+.btn__empty{
+    @include botones ("btn-principal", 4rem, black)
+}

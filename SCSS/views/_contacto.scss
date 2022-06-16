@@ -6,6 +6,9 @@
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width:540px) {
+        background-image:url("../assets/pagina__contacto/img-fondo/fondo-540.jpg");
+    }
 
 
     .prop__main__contacto{
@@ -37,9 +40,13 @@
             .bg__container__info__contacto{
                 background-color: rgba(0, 0, 0, 0.833);
                 backdrop-filter: blur(6px);
+                font-size:map-get($font-sizes, 120 ) ;
 
                 .color__text__info__contacto{
                     color: white;
+                    @media screen and (max-width:540px) {
+                        font-size: map-get($font-sizes, 100 );
+                    }
                 }
             }
             .btn__enviar__form__contacto{

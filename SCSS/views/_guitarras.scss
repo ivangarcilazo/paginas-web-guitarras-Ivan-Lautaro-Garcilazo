@@ -13,23 +13,24 @@
 .prop__body__gs{
     height: 100vh;
     .bg__portada__prinipal__gs{
-    background-image:url("../assets/paginas_guitarra/img-portada/guitarra-portada.png");
+    background-image:url("../../assets/paginas_guitarra/img-portada/guitar-portada.png.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     z-index: -1;
-    height:40rem;
+    height:35rem;
         @media screen and (max-width:768px) {
-            background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada-540.png");
+            
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: contain;
+            background-size: cover;
             z-index: -1;
-            height:20rem;
+            height:35rem;
         }
         @media screen and (max-width:540px){
-            background-size: fill;
-            height: 17rem;
+            background-image: url("../assets/paginas_guitarra/img-portada/guitar_2-540.png.jpg");
+            background-size: cover;
+            height: 30rem;
         }
     }
     /*contenedor categorias*/
@@ -38,7 +39,6 @@
         top: 5.5rem;
         background-color:rgba(255, 255, 255, 0.507);
         backdrop-filter: blur(6px);
-        bottom:3.5rem;
         border-radius: 0px 20px 0px 0px;
         z-index: 1;
         @media  screen and (max-width:768px) {

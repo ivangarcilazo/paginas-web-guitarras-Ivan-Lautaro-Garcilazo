@@ -200,6 +200,29 @@ html {
   transform: translate(-150%, 50%);
   text-decoration: underline;
   text-decoration-color: #7BD3E0; }
+  @media screen and (max-width: 980px) {
+    .prop__cont__acc__index-1 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-2 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-3 .prop__txt__pedalboards__acc__index {
+      bottom: 5.5rem;
+      right: -2rem;
+      width: 40%; } }
+  @media screen and (max-width: 641px) {
+    .prop__cont__acc__index-1 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-2 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-3 .prop__txt__pedalboards__acc__index {
+      bottom: 5.5rem;
+      left: 35rem;
+      width: 60%;
+      font-size: 150%; } }
+  @media screen and (max-width: 500px) {
+    .prop__cont__acc__index-1 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-2 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-3 .prop__txt__pedalboards__acc__index {
+      bottom: 5.5rem;
+      left: 30rem;
+      width: 60%;
+      font-size: 150%; } }
+  @media screen and (max-width: 350px) {
+    .prop__cont__acc__index-1 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-2 .prop__txt__pedalboards__acc__index, .prop__cont__acc__index-3 .prop__txt__pedalboards__acc__index {
+      bottom: 5.5rem;
+      left: 20rem;
+      width: 60%;
+      font-size: 150%; } }
 
 /*LUTHERIA*/
 #lutheria .prop__title__lutheria__index {
@@ -234,6 +257,9 @@ html {
   animation-iteration-count: infinite; }
   @media screen and (max-width: 768px) {
     #lutheria .repara__txt__index {
+      right: 25%; } }
+  @media screen and (max-width: 540px) {
+    #lutheria .repara__txt__index {
       right: 50%; } }
 
 @keyframes repara {
@@ -267,7 +293,8 @@ html {
   background-color: #7BD3E0;
   width: 100%;
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 2; }
   #lutheria .btn__lutheria__index:hover {
     text-decoration: underline; }
 
@@ -275,7 +302,8 @@ html {
   background-color: #D2FA7D;
   width: 100%;
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 2; }
   #lutheria .btn__lutheria__index--sec:hover {
     text-decoration: underline; }
 
@@ -292,12 +320,14 @@ html {
     background-attachment: fixed; }
     @media screen and (max-width: 768px) {
       .prop__body__acc .bg__img__acc {
-        background-image: url("../assets/pagina__accesorios/img-principal-768.png"); } }
+        background-image: url("../assets/pagina__accesorios/img-principal-768.png");
+        max-width: 576px;
+        background-size: cover; } }
     @media screen and (max-width: 576px) {
       .prop__body__acc .bg__img__acc {
         background-image: url("../assets/pagina__accesorios/img-principal.png");
         max-width: 576px;
-        background-size: none;
+        background-size: cover;
         background-repeat: none;
         background-attachment: none;
         height: 35rem; } }
@@ -349,30 +379,29 @@ html {
   /*contenedor categorias*/
   /*contenedor guitarras*/ }
   .prop__body__gs .bg__portada__prinipal__gs {
-    background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada.png");
+    background-image: url("../../assets/paginas_guitarra/img-portada/guitar-portada.png.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     z-index: -1;
-    height: 40rem; }
+    height: 35rem; }
     @media screen and (max-width: 768px) {
       .prop__body__gs .bg__portada__prinipal__gs {
-        background-image: url("../assets/paginas_guitarra/img-portada/guitarra-portada-540.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: contain;
+        background-size: cover;
         z-index: -1;
-        height: 20rem; } }
+        height: 35rem; } }
     @media screen and (max-width: 540px) {
       .prop__body__gs .bg__portada__prinipal__gs {
-        background-size: fill;
-        height: 17rem; } }
+        background-image: url("../assets/paginas_guitarra/img-portada/guitar_2-540.png.jpg");
+        background-size: cover;
+        height: 30rem; } }
   .prop__body__gs .prop__cont__cat__gs {
     position: sticky;
     top: 5.5rem;
     background-color: rgba(255, 255, 255, 0.507);
     backdrop-filter: blur(6px);
-    bottom: 3.5rem;
     border-radius: 0px 20px 0px 0px;
     z-index: 1; }
     @media screen and (max-width: 768px) {
@@ -471,6 +500,9 @@ html {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 540px) {
+    .prop__body__contacto {
+      background-image: url("../assets/pagina__contacto/img-fondo/fondo-540.jpg"); } }
   .prop__body__contacto .prop__main__contacto {
     padding-top: 7rem; }
     .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto {
@@ -489,9 +521,13 @@ html {
           color: white; }
       .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__container__info__contacto {
         background-color: rgba(0, 0, 0, 0.833);
-        backdrop-filter: blur(6px); }
+        backdrop-filter: blur(6px);
+        font-size: 120%; }
         .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__container__info__contacto .color__text__info__contacto {
           color: white; }
+          @media screen and (max-width: 540px) {
+            .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .bg__container__info__contacto .color__text__info__contacto {
+              font-size: 100%; } }
       .prop__body__contacto .prop__main__contacto .height__conteiner__1__contacto .btn__enviar__form__contacto {
         background-color: #7BD3E0;
         width: 5rem;
@@ -555,3 +591,21 @@ html {
       background-image: url("../assets/pagina_atencion/fondo/fondo-768.jpg"); }
       .prop__body__at .prop__main__at .prop__container__info__ac {
         width: 100%; } }
+
+/*pagina vacia*/
+.bg__empty {
+  background-image: url(../assets/empty/empty.r.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-x: center; }
+
+.a_empty {
+  text-decoration: none;
+  color: #e4e2e1; }
+
+.btn__empty {
+  background-color: #7BD3E0;
+  width: 4rem;
+  color: black;
+  text-decoration: none; }
